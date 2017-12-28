@@ -1,0 +1,14 @@
+﻿.main{
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 100;
+}
+
+.intro{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
