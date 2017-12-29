@@ -1,14 +1,65 @@
-﻿.main{
-	font-family: 'Roboto', sans-serif;
-	font-size: 60px;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 100;
+﻿body {
+    background-color: rgb(255, 26, 26)
 }
 
-.intro{
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
+.main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+}
+
+.intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav {
+    width: 600px;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 25px;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    ;
+}
+
+.link1,
+.link2,
+.link3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    grid-gap: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-flow: column;
+}
+
+.link1 {
+    grid-column: 1/span 1;
+    padding: 10px;
+    margin: 5px;
+    border: 2px black solid;
+}
+
+.link2 {
+    grid-column: 2/span 1;
+    padding: 10px;
+    margin: 5px;
+    border: 2px black solid;
+}
+
+.link3 {
+    grid-column: 3/ span 1;
+    padding: 10px;
+    margin: 5px;
+    border: 2px black solid;
 }
