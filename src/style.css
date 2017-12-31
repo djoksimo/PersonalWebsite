@@ -21,7 +21,7 @@
 }
 
 nav {
-    width: 800px;
+    width: 1000px;
     border: 2px rgb(0, 0, 0) solid;
     padding: 7px;
     margin: auto;
@@ -41,6 +41,17 @@ nav {
     border: 10px rgb(17, 16, 16);
 }
 
+.linkwaterloo {
+    color: white;
+}
+
+.linkedin,
+.linkgit {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.experience,
 .home,
 .link1,
 .link2,
@@ -62,7 +73,7 @@ nav {
 
 .grid {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border: 1px rgba(255, 255, 255, 0);
     vertical-align: center;
 }
@@ -75,7 +86,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.link1 {
+.experience {
     grid-column: 2/span 1;
     margin: 10px;
     padding: 10px;
@@ -83,7 +94,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.link2 {
+.link1 {
     grid-column: 3/span 1;
     margin: 10px;
     padding: 10px;
@@ -91,8 +102,16 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.link2 {
+    grid-column: 4/span 1;
+    margin: 10px;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .link3 {
-    grid-column: 4/ span 1;
+    grid-column: 5/ span 1;
     margin: 10px;
     padding: 10px;
     border: 2px rgb(255, 255, 255) solid;
