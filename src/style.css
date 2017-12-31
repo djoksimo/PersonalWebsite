@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: rgb(255, 26, 26)
+    background-color: rgba(251, 255, 0, 0.15);
 }
 
 .main {
@@ -20,11 +20,10 @@
 nav {
     width: 600px;
     border: 2px rgb(0, 0, 0) solid;
-    padding: 25px;
+    padding: 7px;
     margin: auto;
     position: relative;
-    background-color: white;
-    ;
+    background-color: rgba(0, 0, 0, 0.363);
 }
 
 .link1,
@@ -33,33 +32,40 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
     grid-gap: 10px;
-    color: rgb(99, 87, 87);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    vertical-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 200px 200px 200px;
+    border: 1px rgba(255, 255, 255, 0);
+    vertical-align: center;
 }
 
 .link1 {
     grid-column: 1/span 1;
-    height: 70px;
-    margin: 5px;
-    border: 2px black solid;
+    margin: 10px;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .link2 {
     grid-column: 2/span 1;
-    height: 70px;
-    margin: 5px;
-    border: 2px black solid;
+    margin: 10px;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .link3 {
     grid-column: 3/ span 1;
-    height: 70px;
-    margin: 5px;
-    border: 2px black solid;
+    margin: 10px;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgba(0, 0, 0, 0.2);
 }
