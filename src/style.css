@@ -1,4 +1,6 @@
-﻿body {
+﻿/*Github: <i class="fa fa-github" aria-hidden="true"></i> LinkedIn: <i class="fa fa-linkedin" aria-hidden="true"></i>*/
+
+body {
     background: linear-gradient(to top, rgba(148, 148, 138, 0.479), rgba(8, 92, 218, 0.479));
 }
 
@@ -10,23 +12,30 @@
     font-weight: 100;
 }
 
+
+/*fix alignment for when zooming out*/
+
 .profile {
     display: block;
     float: left;
-    margin: 25px;
-    width: 30%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     background-color: rgba(82, 80, 70, 0.295);
+    position: relative;
 }
 
+
+/*fix alignment*/
+
 nav {
-    width: 1000px;
-    border: 2px rgb(0, 0, 0) solid;
-    padding: 7px;
-    margin: auto;
-    position: top;
-    background-color: rgba(0, 0, 0, 0.363);
+    position: fixed;
+    top: 0;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(70, 78, 182);
+    z-index: 10;
 }
 
 .introtext {
@@ -51,19 +60,29 @@ nav {
     color: rgba(0, 0, 0, 0.336);
 }
 
+
+/*fix to right side of nav bar*/
+
+.icons {
+    display: inline-block;
+    right: -500px;
+    grid-column: auto;
+}
+
 .experience,
 .home,
 .link1,
 .link2,
 .link3 {
+    position: sticky;
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-weight: 400;
-    grid-gap: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     vertical-align: center;
+    margin: 0;
 }
 
 .welcome {
@@ -72,8 +91,10 @@ nav {
 }
 
 .grid {
+    position: sticky;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    margin: 0;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
     border: 1px rgba(255, 255, 255, 0);
     vertical-align: center;
 }
