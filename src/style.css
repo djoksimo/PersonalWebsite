@@ -1,7 +1,10 @@
 ﻿/*Github: <i class="fa fa-github" aria-hidden="true"></i> LinkedIn: <i class="fa fa-linkedin" aria-hidden="true"></i>*/
 
+
+/*stylesheet for main.html*/
+
 body {
-    background: linear-gradient(to top, rgba(148, 148, 138, 0.479), rgba(8, 92, 218, 0.479));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.664), rgba(28, 118, 192, 0.479));
 }
 
 .main {
@@ -11,6 +14,8 @@ body {
     text-transform: uppercase;
     position: static;
     font-weight: 100;
+    color: white;
+    text-decoration-line: underline;
 }
 
 
@@ -53,11 +58,11 @@ nav {
 }
 
 .linkwaterloo:visited {
-    color: rgb(127, 119, 151)
+    color: rgba(54, 72, 155, 0.253)
 }
 
 .linkwaterloo:hover {
-    color: rgb(9, 159, 247);
+    color: rgb(135, 170, 233);
     text-decoration: none;
     border-bottom: 2px dotted rgb(255, 255, 255);
 }
@@ -171,4 +176,50 @@ nav {
 .link3 {
     grid-column: 5/ span 1;
     padding: 10px;
+}
+
+
+/*styles for aboutme.html*/
+
+.introlist {
+    display: block;
+    width: 1350px;
+    left: 10px;
+    position: relative;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+}
+
+.arrowdown {
+    color: white;
+    position: relative;
+    display: block;
+    left: 500px;
+    font-size: 150%;
+}
+
+.header {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    display: block;
+    left: 20px;
+    text-decoration-line: underline;
+}
+
+.aboutlist {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 150%;
+    display: block;
+    position: relative;
+    left: 10px;
+    width: 1350px;
 }
