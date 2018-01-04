@@ -4,7 +4,7 @@
 /*stylesheet for main.html*/
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.664), rgba(28, 118, 192, 0.479));
+    background: rgba(2, 8, 66, 0.966);
 }
 
 .main {
@@ -15,7 +15,6 @@ body {
     position: static;
     font-weight: 100;
     color: white;
-    text-decoration-line: underline;
 }
 
 
@@ -27,7 +26,7 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: rgba(82, 80, 70, 0.295);
+    background-color: rgba(70, 78, 182, 0.5);
     position: relative;
 }
 
@@ -48,7 +47,6 @@ nav {
     display: inline-block;
     width: 800px;
     left: 50px;
-    top: -50px;
     position: relative;
     height: auto;
     font-family: 'Roboto', sans-serif;
@@ -58,11 +56,11 @@ nav {
 }
 
 .linkwaterloo:visited {
-    color: rgba(54, 72, 155, 0.253)
+    color: rgba(108, 122, 182, 0.877)
 }
 
 .linkwaterloo:hover {
-    color: rgb(135, 170, 233);
+    color: rgb(132, 100, 145);
     text-decoration: none;
     border-bottom: 2px dotted rgb(255, 255, 255);
 }
@@ -183,12 +181,12 @@ nav {
 
 .introlist {
     display: block;
-    width: 1350px;
     left: 10px;
     position: relative;
     height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    width: 1300px;
     font-size: 26px;
     color: rgb(255, 255, 255);
     line-height: 150%;
@@ -221,5 +219,5 @@ nav {
     display: block;
     position: relative;
     left: 10px;
-    width: 1350px;
+    width: 1300px;
 }
