@@ -85,7 +85,8 @@ nav {
 .link3,
 .giticon,
 .linkedicon,
-.resume {
+.resume,
+.dropbtn {
     position: sticky;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -100,8 +101,7 @@ nav {
 .experience:hover,
 .home:hover,
 .link1:hover,
-.link2:hover,
-.link3:hover {
+.link2:hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.575);
 }
 
@@ -121,8 +121,8 @@ nav {
 .resume {
     grid-column: 12/span 1;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.575);
+    background-color: rgba(7, 201, 152, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.486);
     border-radius: 2%;
 }
 
@@ -221,3 +221,62 @@ nav {
     left: 10px;
     width: 1300px;
 }
+
+
+/*Contact dropdown menu*/
+
+.dropbtn {
+    background: none;
+}
+
+.link3 {
+    float: left;
+    overflow: hidden;
+}
+
+.link3 .dropbtn {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #7e4949;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 13;
+}
+
+.link3:hover,
+.email:hover,
+.phone:hover,
+.dropbtn {
+    background-color: green;
+}
+
+.dropdown a {
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: rgb(171, 6, 177);
+}
+
+.show {
+    display: block;
+}
+
+
+/*fix dropdown menu (does not dropdown properly)
+
+Update all html pages with new script and nav bar
+*/
