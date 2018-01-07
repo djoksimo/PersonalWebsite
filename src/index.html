@@ -5,7 +5,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
+    <script src="./jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+    <script>
+        function ScrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        $(document).ready(function() {
+            $(".introtext").hide();
+        });
+
+
+        $(document).ready(function() {
+            $("#arrow").click(function() {
+                $(".introtext").fadeIn(2000);
+            });
+        });
+    </script>
     <!-- Start of Async Drift Code -->
     <script>
         ! function() {
@@ -33,7 +49,7 @@
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="./script.js" rel="javascript">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
 </head>
 
@@ -64,7 +80,8 @@
     <h1 class="maintitle">Danilo Joksimovic</h1>
 
 
-    <p id="arrow">&#8675</p>
+    <div onclick="ScrollToBottom()" id="arrow"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></div>
+
 
 
     <!--<div>
@@ -85,10 +102,13 @@
             <br>As you surf through my website, you’ll be able to see all my collaborative and personal
             <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
             <br><br>Feel free to check out my
-            <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank"> GitHub</a> account,
-            <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and resume.
+            <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
+            <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
+            <a class="linkwaterloo" href="./Danilo_resume.pdf" target="_blank"> resume</a>.
         </div>
     </div>
+
+
     <script>
         //toggle menu
         function clickToggle() {
