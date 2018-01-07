@@ -293,13 +293,15 @@ nav {
     cursor: pointer;
     font-size: 20px;
     border: none;
-    border-bottom: 17px solid rgba(255, 255, 255, 0);
     outline: none;
     color: rgb(255, 255, 255);
     background-color: inherit;
     z-index: 13;
     padding: none;
 }
+
+
+/*ToDo: fix position of menu*/
 
 .dropdown {
     display: none;
@@ -344,6 +346,8 @@ nav {
 
 #myInput {
     display: none;
+    width: 0;
+    height: 0;
 }
 
 
