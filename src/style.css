@@ -36,7 +36,7 @@ body {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     bottom: 0;
-    left: 42%;
+    left: 43%;
     margin-top: -45px;
     margin-left: none;
     padding-left: none;
@@ -293,6 +293,7 @@ nav {
     cursor: pointer;
     font-size: 20px;
     border: none;
+    border-bottom: 17px solid rgba(255, 255, 255, 0);
     outline: none;
     color: rgb(255, 255, 255);
     background-color: inherit;
@@ -304,22 +305,24 @@ nav {
     display: none;
     position: fixed;
     background-color: #3397b1;
-    width: 150px;
+    width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 30;
     padding-bottom: none;
     height: inherit;
-    padding: none;
 }
 
 .dropdown a {
     float: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
     text-align: left;
-    z-index: 14;
-    padding: none;
+    z-index: 34;
+    padding: 3px;
+    text-align: center;
 }
 
 .show {

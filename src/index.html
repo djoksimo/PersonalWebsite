@@ -15,10 +15,33 @@
             $(".introtext").hide();
         });
 
+        $(document).ready(function() {
+            $(".dropdown").hide();
+        });
+
+        $(document).ready(function() {
+            $(".link3").click(function() {
+                $(".dropdown").slideToggle(300);
+            });
+        });
+
+        $(document).ready(function() {
+            $(".link3").mouseleave(function() {
+                $(".dropdown").slideUp(300);
+            });
+        });
 
         $(document).ready(function() {
             $("#arrow").click(function() {
-                $(".introtext").fadeIn(2000);
+                $(".welcome").fadeIn(500);
+                $(".introtext").fadeIn(2000, "linear");
+            });
+        });
+
+        $(document).ready(function() {
+            $(".bg").mouseover(function() {
+                $(".welcome").fadeIn(500);
+                $(".introtext").fadeIn(2000, "linear");
             });
         });
     </script>
@@ -65,7 +88,7 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown" id="myDropdown">
-                <a class="email" href="#">Email</a>
+                <a class="email" href="#">Email<br></a>
                 <a class="phone" href="#">Phone</a>
             </div>
         </div>
@@ -97,8 +120,8 @@
         </a> My name is Danilo Joksimovic and I am a
             <a class="linkwaterloo" href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank">
             Software Engineering 
-        </a> student at the University of Waterloo. I am currently seeking a 4 month software engineering internship from May-August 2018. I made this website to showcase my work experience, my interest in the software engineering industry,
-            and to tell you a little bit about myself.
+        </a> student at the University of Waterloo.<br>I am currently seeking a 4 month software engineering internship from May-August 2018.
+            <br>I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
             <br>As you surf through my website, you’ll be able to see all my collaborative and personal
             <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
             <br><br>Feel free to check out my
