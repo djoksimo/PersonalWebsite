@@ -6,6 +6,31 @@
 <head>
     <meta charset="utf-8" />
     <title>About Me</title>
+    <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+    <!-- Start of Async Drift Code -->
+    <script>
+        ! function() {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                t.factory = function(e) {
+                    return function() {
+                        var n;
+                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                    };
+                }, t.methods.forEach(function(e) {
+                    t[e] = t.factory(e);
+                }), t.load = function(t) {
+                    var e, n, o, i;
+                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+                });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('y5fd5ndskw39');
+    </script>
+    <!-- End of Async Drift Code -->
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="./script.js" rel="javascript">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,7 +62,7 @@
         <a class="resume" href="./Danilo_resume.pdf" target="_blank">Resume</a>
     </nav>
     <br><br>
-    <h1 class="main">About Me</h1>
+    <h1 class="maintitle">About Me</h1>
 
     <div class="introsection">
 
@@ -96,7 +121,7 @@
         }
         //close dropdown menu
         //fix window class
-        window.onmspointerenter = function(x) {
+        window.onclick = function(x) {
                 if (!x.target.matches('.dropbtn')) {
                     var myDropdown = document.getElementById("myDropdown");
                     if (myDropdown.classList.contains('show') === true) {

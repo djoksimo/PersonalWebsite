@@ -4,50 +4,108 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Danilo Joksimovic</title>
+    <title>Home</title>
+    <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+    <!-- Start of Async Drift Code -->
+    <script>
+        ! function() {
+            var t;
+            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                t.factory = function(e) {
+                    return function() {
+                        var n;
+                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                    };
+                }, t.methods.forEach(function(e) {
+                    t[e] = t.factory(e);
+                }), t.load = function(t) {
+                    var e, n, o, i;
+                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+                });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('y5fd5ndskw39');
+    </script>
+    <!-- End of Async Drift Code -->
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="./script.js" rel="javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
 </head>
 
+
 <body>
-    <nav class="grid ">
+    <nav class="grid">
         <a class="home" href="./index.html">Home</a>
         <a class="experience" href="./experience.html">Experience</a>
         <a class="link1" href="./projects.html">Projects</a>
         <a class="link2" href="./aboutme.html">About</a>
-        <a class="link3" href="./contact.html">Contact Me</a>
+        <div class="link3">
+            <button class="dropbtn" onclick="clickToggle()">Contact
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown" id="myDropdown">
+                <a class="email" href="#">Email</a>
+                <a class="phone" href="#">Phone</a>
+            </div>
+        </div>
         <a class="giticon" href="https://github.com/djoksimo" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
         </a>
-        <a class="linkedicon" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/ " target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <a class="linkedicon" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
         </a>
         <a class="resume" href="./Danilo_resume.pdf" target="_blank">Resume</a>
     </nav>
-    <h1 class="main">Danilo Joksimovic</h1>
+    <h1 class="maintitle">Danilo Joksimovic</h1>
 
-    <div>
+
+    <p id="arrow">&#8675</p>
+
+
+    <!--<div>
         <img class="profile" src="./Photos/Portrait.png" align: "left" alt="Headshot picture failed to load">
         <br><br>
     </div>
+-->
 
-
-
-    <div class="introtext">
-        <a class="welcome">
+    <div class="bg">
+        <div class="introtext">
+            <a class="welcome">
             Welcome to my website<br><br>
         </a> My name is Danilo Joksimovic and I am a
-        <a class="linkwaterloo" href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank">
-            Software Engineering
-        </a> student at the University of Waterloo. I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
-        <br>As you surf through my website, you’ll be able to see all my collaborative and personal
-        <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
-        <br><br>Feel free to check out my
-        <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank"> GitHub</a> account,
-        <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and resume.
+            <a class="linkwaterloo" href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank">
+            Software Engineering 
+        </a> student at the University of Waterloo. I am currently seeking a 4 month software engineering internship from May-August 2018. I made this website to showcase my work experience, my interest in the software engineering industry,
+            and to tell you a little bit about myself.
+            <br>As you surf through my website, you’ll be able to see all my collaborative and personal
+            <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
+            <br><br>Feel free to check out my
+            <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank"> GitHub</a> account,
+            <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and resume.
+        </div>
     </div>
+    <script>
+        //toggle menu
+        function clickToggle() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        //close dropdown menu
+        //fix window class
+        window.onclick = function(x) {
+                if (!x.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show') === true) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+            //copy into script.js
+    </script>
 
 </body>
 
