@@ -7,6 +7,7 @@
     <title>Home</title>
     <script src="./jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+
     <script>
         function ScrollToBottom() {
             window.scrollTo(0, document.body.scrollHeight);
@@ -21,7 +22,7 @@
 
         $(document).ready(function() {
             $(".link3").click(function() {
-                $(".dropdown").slideToggle(300);
+                $(".dropdown").slideDown(300);
             });
         });
 
@@ -84,12 +85,17 @@
         <a class="link1" href="./projects.html">Projects</a>
         <a class="link2" href="./aboutme.html">About</a>
         <div class="link3">
-            <button class="dropbtn" onclick="clickToggle()">Contact
+            <button class="dropbtn">Contact
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown" id="myDropdown">
-                <a class="email" href="#">Email<br></a>
-                <a class="phone" href="#">Phone</a>
+                <a class="email">Email<br></a>
+                <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
+                <a class="emailname" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                <a class="phone">Phone</a>
+                <input type="text" value="(416) 804-0390" id="myInput">
+                <a class="phonename" onclick="copyValue()">(416) 804-0390</a>
+
             </div>
         </div>
         <a class="giticon" href="https://github.com/djoksimo" target="_blank">
@@ -133,21 +139,29 @@
 
 
     <script>
-        //toggle menu
-        function clickToggle() {
-            document.getElementById("myDropdown").classList.toggle("show");
+        $(document).ready(function() {
+            $(".emailname").hide();
+            $(".phonename").hide();
+        });
+
+        $(document).ready(function() {
+            $(".email").click(function() {
+                $(".emailname").fadeToggle(200);
+            });
+        });
+        $(document).ready(function() {
+            $(".phone").click(function() {
+                $(".phonename").fadeToggle(200);
+            });
+        });
+
+
+        function copyValue() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            document.execCommand("Copy");
+            alert("Copied the text: " + copyText.value);
         }
-        //close dropdown menu
-        //fix window class
-        window.onclick = function(x) {
-                if (!x.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show') === true) {
-                        myDropdown.classList.remove('show');
-                    }
-                }
-            }
-            //copy into script.js
     </script>
 
 </body>
