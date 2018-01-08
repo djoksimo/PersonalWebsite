@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-
 <head>
     <meta charset="utf-8" />
-    <title>About Me</title>
+    <title>Home</title>
     <script src="./jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
 
@@ -13,16 +12,8 @@
         function ScrollToBottom() {
             window.scrollTo(0, document.body.scrollHeight);
         }
-
         $(document).ready(function() {
-            $(".introlist").hide();
-        });
-
-        $(document).ready(function() {
-            $(".marathonlist").hide();
-        });
-        $(document).ready(function() {
-            $(".marathonlist").hide();
+            $(".introtext").hide();
         });
         $(document).ready(function() {
             $("footer").hide();
@@ -46,20 +37,15 @@
 
         $(document).ready(function() {
             $("#arrow").click(function() {
-                $(".marathonlist").fadeIn(2000, "linear");
-                $(".head").fadeIn(2000, "linear");
-                $(".introlist").fadeIn(2000, "linear");
-                $(".waterlist").fadeIn(2000, "linear");
-                $("footer").fadeIn(2000);
+                $(".welcome").fadeIn(500);
+                $(".introtext").fadeIn(2000, "linear");
             });
         });
 
         $(document).ready(function() {
-            $(".backgrnd").mouseenter(function() {
-                $(".introlist").fadeIn(2000, "linear");
-                $(".head").fadeIn(2000, "linear");
-                $(".marathonlist").fadeIn(2000, "linear");
-                $(".waterlist").fadeIn(2000, "linear");
+            $(".bg").mouseenter(function() {
+                $(".welcome").fadeIn(500);
+                $(".introtext").fadeIn(2000, "linear");
                 $("footer").fadeIn(2000);
             });
         });
@@ -91,9 +77,10 @@
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link href="./script.js" rel="javascript">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
 </head>
+
 
 <body>
     <nav class="grid">
@@ -102,12 +89,17 @@
         <a class="link1" href="./projects.html">Projects</a>
         <a class="link2" href="./aboutme.html">About</a>
         <div class="link3">
-            <button class="dropbtn" onclick="clickToggle()">Contact
+            <button class="dropbtn">Contact
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown" id="myDropdown">
-                <a class="email" href="#">Email</a>
-                <a class="phone" href="#">Phone</a>
+                <a class="email">Email<br></a>
+                <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
+                <a class="emailname" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                <a class="phone">Phone</a>
+                <input type="text" value="(416) 804-0390" id="myInput">
+                <a class="phonename" onclick="copyValue()">(416) 804-0390</a>
+
             </div>
         </div>
         <a class="giticon" href="https://github.com/djoksimo" target="_blank">
@@ -118,64 +110,67 @@
         </a>
         <a class="resume" href="./Danilo_resume.pdf" target="_blank">Resume</a>
     </nav>
-    <br><br>
-    <h1 class="maintitle">About Me</h1>
+    <h1 class="maintitle">Danilo Joksimovic</h1>
+
 
     <div onclick="ScrollToBottom()" id="arrow"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></div>
 
-    <div class="backgrnd">
-        <ul class="introlist">
-            <li>I was born and raised in Toronto, Ontario</li>
-            <li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
-            <li>I speak English, French and Sebian fluently</li>
-            <li>I have travelled to over 27 countries, 17 of which are in Europe</li>
-            <li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
-            <li>I worked a part-time job in my first semester of University</li>
-            <li>I played water polo competitively on a national league for six years</li>
-        </ul>
 
-        <br>
 
-        <h1 class="head">Marathon</h1>
-        <br>
-        <ul class="marathonlist">
-            <li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
-            <li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
-            <li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
-        </ul>
-
-        <br>
-
-        <h1 class="head">Water Polo</h1>
-        <br>
-        <ul class="waterlist">
-            <li>I played for the Toronto Golden Jets water polo club for six years</li>
-            <li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
-            <li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
-            <li>In high school, I played for the Lawrence Park Collegiate Institute water polo team in the TDSSAA</li>
-            <li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
-            <li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
-        </ul>
-
+    <!--<div>
+        <img class="profile" src="./Photos/Portrait.png" align: "left" alt="Headshot picture failed to load">
+        <br><br>
     </div>
+-->
+
+    <div class="bg">
+        <div class="introtext">
+            <a class="welcome">
+            Welcome to my website<br><br>
+        </a> My name is Danilo Joksimovic and I am a
+            <a class="linkwaterloo" href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank">
+            Software Engineering 
+        </a> student at the University of Waterloo.<br>I am currently seeking a 4 month software engineering internship from May-August 2018.
+            <br>I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
+            <br>As you surf through my website, you’ll be able to see all my collaborative and personal
+            <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
+            <br><br>Feel free to check out my
+            <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
+            <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
+            <a class="linkwaterloo" href="./Danilo_resume.pdf" target="_blank"> resume</a>.
+        </div>
+
+        <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic</footer>
     </div>
+
+
+
     <script>
-        //toggle menu
-        function clickToggle() {
-            document.getElementById("myDropdown").classList.toggle("show");
+        $(document).ready(function() {
+            $(".emailname").hide();
+            $(".phonename").hide();
+        });
+
+        $(document).ready(function() {
+            $(".email").click(function() {
+                $(".emailname").fadeToggle(200);
+            });
+        });
+        $(document).ready(function() {
+            $(".phone").click(function() {
+                $(".phonename").fadeToggle(200);
+            });
+        });
+
+
+        function copyValue() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            document.execCommand("Copy");
+            alert("Copied the text: " + copyText.value);
         }
-        //close dropdown menu
-        //fix window class
-        window.onclick = function(x) {
-                if (!x.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show') === true) {
-                        myDropdown.classList.remove('show');
-                    }
-                }
-            }
-            //copy into script.js
     </script>
+
 </body>
 
 </html>

@@ -14,7 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 145px;
     display: block;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 3%;
     width: 1410px;
     text-align: center;
@@ -235,16 +235,16 @@ nav {
 /*styles for aboutme.html*/
 
 .introlist {
+    width: 70%;
     display: block;
-    left: 10px;
+    height: 150px;
     position: relative;
-    height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    width: 1300px;
-    font-size: 26px;
+    font-size: 22px;
     color: rgb(255, 255, 255);
     line-height: 150%;
+    top: 5%;
 }
 
 .backgrnd {
@@ -252,41 +252,48 @@ nav {
     position: absolute;
     top: 110%;
     width: 100%;
-    height: 1380px;
+    height: 1480px;
     background-color: rgb(5, 5, 105);
     margin: 0;
     border: 0;
     left: 0;
 }
 
-.arrowdown {
-    color: white;
-    position: relative;
-    display: block;
-    left: 500px;
-    font-size: 150%;
-}
-
-.header {
+.head {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    width: 70%;
     font-size: 50px;
     display: block;
-    margin-left: 20px;
     text-decoration-line: underline;
 }
 
-.aboutlist {
-    color: white;
+.waterlist {
+    width: 70%;
+    height: 150px;
+    display: block;
+    margin: auto;
+    position: relative;
+    height: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    color: rgb(255, 255, 255);
     line-height: 150%;
+}
+
+.marathonlist {
+    width: 70%;
+    height: 30px;
     display: block;
     position: relative;
-    left: 10px;
-    width: 1300px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
 }
 
 
