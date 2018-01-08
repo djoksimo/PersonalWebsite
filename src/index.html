@@ -15,6 +15,9 @@
         $(document).ready(function() {
             $(".introtext").hide();
         });
+        $(document).ready(function() {
+            $("footer").hide();
+        });
 
         $(document).ready(function() {
             $(".dropdown").hide();
@@ -27,7 +30,7 @@
         });
 
         $(document).ready(function() {
-            $(".link3").mouseleave(function() {
+            $(".dropdown").mouseleave(function() {
                 $(".dropdown").slideUp(300);
             });
         });
@@ -40,9 +43,10 @@
         });
 
         $(document).ready(function() {
-            $(".bg").mouseover(function() {
+            $(".bg").mouseenter(function() {
                 $(".welcome").fadeIn(500);
                 $(".introtext").fadeIn(2000, "linear");
+                $("footer").fadeIn(2000);
             });
         });
     </script>
@@ -135,7 +139,10 @@
             <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
             <a class="linkwaterloo" href="./Danilo_resume.pdf" target="_blank"> resume</a>.
         </div>
+
+        <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic</footer>
     </div>
+
 
 
     <script>

@@ -6,7 +6,54 @@
 <head>
     <meta charset="utf-8" />
     <title>About Me</title>
+    <script src="./jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+
+    <script>
+        function ScrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        $(document).ready(function() {
+            $(".introlist").hide();
+        });
+        $(document).ready(function() {
+            $("footer").hide();
+        });
+
+        $(document).ready(function() {
+            $(".dropdown").hide();
+        });
+
+        $(document).ready(function() {
+            $(".link3").click(function() {
+                $(".dropdown").slideDown(300);
+            });
+        });
+
+        $(document).ready(function() {
+            $(".dropdown").mouseleave(function() {
+                $(".dropdown").slideUp(300);
+            });
+        });
+
+        $(document).ready(function() {
+            $("#arrow").click(function() {
+                $(".header").fadeIn(2000, "linear");
+                $(".aboutlist").fadeIn(2000, "linear");
+                $(".introlist").fadeIn(2000, "linear");
+                $("footer").fadeIn(2000);
+            });
+        });
+
+        $(document).ready(function() {
+            $(".backgrnd").mouseenter(function() {
+                $(".header").fadeIn(2000, "linear");
+                $(".aboutlist").fadeIn(2000, "linear");
+                $(".introlist").fadeIn(2000, "linear");
+                $("footer").fadeIn(2000);
+            });
+        });
+    </script>
     <!-- Start of Async Drift Code -->
     <script>
         ! function() {
@@ -64,56 +111,59 @@
     <br><br>
     <h1 class="maintitle">About Me</h1>
 
-    <div class="introsection">
+    <div onclick="ScrollToBottom()" id="arrow"><i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i></div>
 
-        <ul class="introlist">
-            <li>I was born and raised in Toronto, Ontario</li>
-            <li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
-            <li>I speak English, French and Sebian fluently</li>
-            <li>I have travelled to over 27 countries, 17 of which are in Europe</li>
-            <li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
-            <li>I worked a part-time job in my first semester of University</li>
-            <li>I played water polo competitively on a national league for six years</li>
-        </ul>
+    <div class="backgrnd">
+        <div class="introsection">
+
+            <ul class="introlist">
+                <li>I was born and raised in Toronto, Ontario</li>
+                <li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
+                <li>I speak English, French and Sebian fluently</li>
+                <li>I have travelled to over 27 countries, 17 of which are in Europe</li>
+                <li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
+                <li>I worked a part-time job in my first semester of University</li>
+                <li>I played water polo competitively on a national league for six years</li>
+            </ul>
+        </div>
+        <br><br>
+
+        <i class="fa fa-arrow-down  fa-5x arrowdown" aria-hidden="true"></i>
+
+        <br><br>
+
+        <div class="marathonsection">
+
+            <h1 class="header">Marathon</h1>
+
+            <ul class="aboutlist">
+                <li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
+                <li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
+                <li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
+            </ul>
+
+        </div>
+
+        <br><br>
+
+        <i class="fa fa-arrow-down  fa-5x arrowdown" aria-hidden="true"></i>
+        <br><br>
+
+        <div class="waterpolosection">
+
+            <h1 class="header">Water Polo</h1>
+
+            <ul class="aboutlist">
+                <li>I played for the Toronto Golden Jets water polo club for six years</li>
+                <li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
+                <li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
+                <li>In high school, I played for the Lawrence Park Collegiate Institute water polo team in the TDSSAA</li>
+                <li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
+                <li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
+            </ul>
+
+        </div>
     </div>
-    <br><br>
-
-    <i class="fa fa-arrow-down  fa-5x arrowdown" aria-hidden="true"></i>
-
-    <br><br>
-
-    <div class="marathonsection">
-
-        <h1 class="header">Marathon</h1>
-
-        <ul class="aboutlist">
-            <li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
-            <li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
-            <li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
-        </ul>
-
-    </div>
-
-    <br><br>
-
-    <i class="fa fa-arrow-down  fa-5x arrowdown" aria-hidden="true"></i>
-    <br><br>
-
-    <div class="waterpolosection">
-
-        <h1 class="header">Water Polo</h1>
-
-        <ul class="aboutlist">
-            <li>I played for the Toronto Golden Jets water polo club for six years</li>
-            <li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
-            <li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
-            <li>In high school, I played for the Lawrence Park Collegiate Institute water polo team in the TDSSAA</li>
-            <li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
-            <li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
-        </ul>
-
-    </div>
-
     <script>
         //toggle menu
         function clickToggle() {
