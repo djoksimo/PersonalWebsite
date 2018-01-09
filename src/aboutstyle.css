@@ -1,0 +1,48 @@
+/*styles specifically for aboutme.html*/
+
+.backgrnd {
+    display: block;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: 1500px;
+    background-color: rgb(5, 5, 105);
+    margin: 0;
+    border: 0;
+    left: 0;
+}
+
+.introlist {
+    display: block;
+    width: 1350px;
+    left: 10px;
+    position: relative;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+}
+
+.head {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    display: block;
+    left: 20px;
+    text-decoration-line: underline;
+}
+
+.aboutlist {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 150%;
+    display: block;
+    position: relative;
+    left: 10px;
+    width: 1350px;
+}
