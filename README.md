@@ -1,5 +1,5 @@
-Personal website created usin HTML, CSS and Javascript from scratch.
+Personal website created using HTML, CSS, JS, jQuery, and Node.js
 Purpose of Website: For potential employers
-Will incorporate node.js and react.js later
-Domain: danilojoksimovic.com
+Will incorporate bootstrap later
+Domain: www.danilojoksimovic.com
 Still a work in progress
