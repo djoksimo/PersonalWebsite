@@ -63,6 +63,8 @@ body {
     position: relative;
 }*/
 
+
+/*
 nav {
     position: fixed;
     top: 0;
@@ -76,7 +78,7 @@ nav {
     padding-bottom: 5px;
     border-bottom: 1.5px solid white;
     right: 100px;
-}
+}*/
 
 .bg {
     display: block;
@@ -134,6 +136,8 @@ nav {
 
 /*fix to right side of nav bar*/
 
+
+/*
 .home,
 .experience,
 .link1,
@@ -235,10 +239,13 @@ nav {
     grid-column: 7/ span 1;
     padding: 10px;
 }
+*/
 
 
 /*Contact dropdown menu*/
 
+
+/*
 .dropbtn {
     background: none;
 }
@@ -258,10 +265,13 @@ nav {
     z-index: 13;
     padding: none;
 }
+*/
 
 
 /*ToDo: fix position of menu*/
 
+
+/*
 .dropdown {
     display: none;
     top: 56px;
@@ -286,7 +296,7 @@ nav {
     z-index: 34;
     padding: 3px;
     text-align: center;
-}
+}*/
 
 .email,
 .phone {
