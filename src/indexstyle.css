@@ -1,0 +1,21 @@
+#myInput {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.title {
+    font-size: 75px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mephoto {
+    background-color: rgb(33, 90, 128);
+    width: 15%;
+    height: 15%;
+}
+
+footer {
+    text-align: right;
+    bottom: 2px;
+}

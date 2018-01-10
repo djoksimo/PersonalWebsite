@@ -8,16 +8,38 @@
     <script src="./jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+    <link href="./indexstyle.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $(document).ready(function() {
+            $(".dropdown").click(function() {
+                $(".dropdown-menu").slideDown(300);
+            });
+        });
+
+        $(document).click(function(e) {
+            e.stopPropagation();
+            var container = $(".dropdown");
+
+            if (container.has(e.target).length === 0) {
+                $(".dropdown-menu").slideUp(300);
+            }
+        })
+    </script>
+
     <!--
     <script>
         function ScrollToBottom() {
             window.scrollTo(0, document.body.scrollHeight);
         }
-
 
         $(document).ready(function() {
             $(".introtext").hide();
@@ -93,33 +115,23 @@
         <div class="container-fluid">
             <ul class="navbar-nav mb-auto">
                 <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./experience.html">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="./aboutme.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             </ul>
-
-            <!--
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
-                            <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
-                        <li><a onclick="copyValue()">Email</a></li>
-                        <li><a class="emailname">djoksimo@uwaterloo.ca</a></li>l
-                        <li><a onclick="copyValue()">Phone</a></li>
-                        <input type="text" value="(416) 804-0390" id="myInput">
-                        <li><a class="phonename">(416) 804-0390</a></li>
-                    </ul>
-                </li>-->
 
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop">
                         Contact
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" onclick="copyValue()">Email</a>
-                        <a class="dropdown-item" onclick="copyValue()">Phone</a>
+                        <a class="dropdown-item email">Email</a>
+                        <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
+                        <a class="dropdown-item emailname" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                        <a class="dropdown-item phone">Phone</a>
+                        <input type="text" value="(416) 804-0390" id="myInput">
+                        <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">(416) 804-0390</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="./danilo_joksimovic.pdf">Resume</a></li>
@@ -129,41 +141,38 @@
 
         </div>
     </nav>
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>Danilo Joksimovic</h1>
-            <p>Ambitious...</p>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="title"><br>Danilo Joksimovic</h1>
+            <br>
+            <h2 class="text-left">
+                Welcome to my website<br><br>
+            </h2>
+            <p>
+                My name is Danilo Joksimovic and I am a
+                <a href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank"> Software Engineering </a> student at the University of Waterloo.
+                <br>I am currently seeking a 4 month software engineering internship from May-August 2018.
+                <br>I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
+                <br>As you surf through my website, you’ll be able to see all my collaborative and personal
+                <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
+                <br><br>Feel free to check out my
+                <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
+                <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
+                <a class="linkwaterloo" href="./danilo_joksimovic.pdf" target="_blank"> resume</a>.</p>
         </div>
     </div>
+
+    <div class="container">
+        <img src="./Photos/Portrait.png" class="rounded-circle mephoto float-left" alt="Headshot did not load">
+    </div>
+
+    <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic</footer>
 
     <!--<div>
         <img class="profile" src="./Photos/Portrait.png" align: "left" alt="Headshot picture failed to load">
         <br><br>
     </div>
 -->
-    <!--
-
-    <div class="container">
-        <div class="introtext">
-            <a class="welcome">
-            Welcome to my website<br><br>
-        </a> My name is Danilo Joksimovic and I am a
-            <a class="linkwaterloo" href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank">
-            Software Engineering 
-        </a> student at the University of Waterloo.<br>I am currently seeking a 4 month software engineering internship from May-August 2018.
-            <br>I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
-            <br>As you surf through my website, you’ll be able to see all my collaborative and personal
-            <a class="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
-            <br><br>Feel free to check out my
-            <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
-            <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
-            <a class="linkwaterloo" href="./danilo_joksimovic.pdf" target="_blank"> resume</a>.
-        </div>
-
-        <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic</footer>
-    </div>
-
-    
 
     <script>
         $(document).ready(function() {
@@ -186,11 +195,10 @@
         function copyValue() {
             var copyText = document.getElementById("myInput");
             copyText.select();
-            document.execCommand("Copy");
-            alert("Copied the text: " + copyText.value);
+            document.execCommand('copy');
         }
     </script>
--->
+
 </body>
 
 </html>
