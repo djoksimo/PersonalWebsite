@@ -5,11 +5,12 @@
 }
 
 .title {
-    font-size: 75px;
+    font-size: 55px;
     font-family: 'Roboto', sans-serif;
 }
 
 .mephoto {
+    display: inline-block;
     background-color: rgb(33, 90, 128);
     width: 15%;
     height: 15%;
@@ -19,3 +20,66 @@ footer {
     text-align: right;
     bottom: 2px;
 }
+
+
+/*
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+*/
+
+
+/* The horizontal line on the top of the device */
+
+
+/*
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+*/
+
+
+/* The circle on the bottom of the device */
+
+
+/*
+.smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}*/
+
+
+/*
+.smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+}
+*/
+
+
+/* The screen (or content) of the device */
