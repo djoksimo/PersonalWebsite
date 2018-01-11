@@ -4,6 +4,14 @@
     height: 0;
 }
 
+.container {
+    overflow-y: auto;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .title {
     font-size: 55px;
     font-family: 'Roboto', sans-serif;
@@ -19,7 +27,18 @@
 footer {
     text-align: right;
     bottom: 2px;
+    right: 3px;
 }
+
+.phonename:hover,
+.emailname:hover {
+    cursor: pointer;
+}
+
+
+/*styles for experience.html*/
+
+.resumeview {}
 
 
 /*

@@ -13,97 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-        $(document).ready(function() {
-            $(".dropdown").click(function() {
-                $(".dropdown-menu").slideDown(300);
-            });
-        });
-
-        $(document).click(function(e) {
-            e.stopPropagation();
-            var container = $(".dropdown");
-
-            if (container.has(e.target).length === 0) {
-                $(".dropdown-menu").slideUp(300);
-            }
-        });
-    </script>
-
-    <!--
-    <script>
-        function ScrollToBottom() {
-            window.scrollTo(0, document.body.scrollHeight);
-        }
-
-        $(document).ready(function() {
-            $(".introtext").hide();
-        });
-        $(document).ready(function() {
-            $("footer").hide();
-        });
-
-        $(document).ready(function() {
-            $(".dropdown").hide();
-        });
-
-        $(document).ready(function() {
-            $(".link3").click(function() {
-                $(".dropdown").slideDown(300);
-            });
-        });
-
-        $(document).ready(function() {
-            $(".dropdown").mouseleave(function() {
-                $(".dropdown").slideUp(300);
-            });
-        });
-
-        $(document).ready(function() {
-            $("#arrow").click(function() {
-                $(".welcome").fadeIn(500);
-                $(".introtext").fadeIn(2000, "linear");
-            });
-        });
-
-        $(document).ready(function() {
-            $(".bg").mouseenter(function() {
-                $(".welcome").fadeIn(500);
-                $(".introtext").fadeIn(2000, "linear");
-                $("footer").fadeIn(2000);
-            });
-        });
-    </script>-->
-    <!-- Start of Async Drift Code -->
-    <script>
-        ! function() {
-            var t;
-            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                t.factory = function(e) {
-                    return function() {
-                        var n;
-                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-                    };
-                }, t.methods.forEach(function(e) {
-                    t[e] = t.factory(e);
-                }), t.load = function(t) {
-                    var e, n, o, i;
-                    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-                        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-                });
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('y5fd5ndskw39');
-    </script>
-    <!-- End of Async Drift Code -->
-    <link href="./script.js" rel="javascript">
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
@@ -115,8 +26,8 @@
         <div class="container-fluid">
             <ul class="navbar-nav navbar-expand-md">
                 <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./experience.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="./aboutme.html">About</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop">
@@ -140,6 +51,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="title"><br>Danilo Joksimovic</h1>
+            <div class="LI-profile-badge float-right" data-version="v1" target="_blank" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="djoksimo"><a class="LI-simple-link" href='https://ca.linkedin.com/in/djoksimo?trk=profile-badge'>Danilo Joksimovic</a></div>
             <br>
             <h2 class="text-left">
                 Welcome to my website<br><br>
@@ -154,10 +66,7 @@
                 <br><br>Feel free to check out my
                 <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
                 <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
-                <a class="linkwaterloo" href="./danilo_joksimovic.pdf" target="_blank"> resume</a>.</p>
-
-            <img src="./Photos/Portrait.png" class="rounded-circle mephoto float-right img-fluid" alt="Headshot did not load">
-
+                <a class="linkwaterloo" href="./Danilo Joksimovic Resume.pdf" target="_blank"> resume</a>.</p>
         </div>
     </div>
 
@@ -166,42 +75,12 @@
     </div>
     <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic </footer>
 
-    <!--
+    <!--Smartphone
     <div class="smartphone">
         <div class="content">
             <iframe src="index.html" style="width:100%;border:none;height:100%" />
         </div>
     </div>-->
-    <!--<div>
-        <img class="profile" src="./Photos/Portrait.png" align: "left" alt="Headshot picture failed to load">
-        <br><br>
-    </div>
--->
-
-    <script>
-        $(document).ready(function() {
-            $(".emailname").hide();
-            $(".phonename").hide();
-        });
-
-        $(document).ready(function() {
-            $(".email").click(function() {
-                $(".emailname").fadeToggle(200);
-            });
-        });
-        $(document).ready(function() {
-            $(".phone").click(function() {
-                $(".phonename").fadeToggle(200);
-            });
-        });
-
-
-        function copyValue() {
-            var copyText = document.getElementById("myInput");
-            copyText.select();
-            document.execCommand('copy');
-        }
-    </script>
 
 </body>
 

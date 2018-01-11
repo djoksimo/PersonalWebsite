@@ -1,0 +1,26 @@
+#myInput {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.slideimage {
+    max-width: 400px;
+    max-height: 300px;
+    vertical-align: middle;
+}
+
+.carousel {
+    max-width: 650px;
+    height: initial;
+    left: 29%;
+    right: 29%
+}
+
+.backgrnd {
+    background-color: black;
+}

@@ -6,24 +6,53 @@
     <meta charset="utf-8" />
     <title>Home</title>
     <script src="./jquery-3.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
-
-
-    <!-- End of Async Drift Code -->
-
-    <link href="./script.js" rel="javascript">
+    <link href="./indexstyle.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
 
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav navbar-expand-md">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutme.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop">
+                                    Contact
+                                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item email">Email</a>
+                        <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
+                        <a class="dropdown-item emailname" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                        <a class="dropdown-item phone">Phone</a>
+                        <input type="text" value="(416) 804-0390" id="myInput">
+                        <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">(416) 804-0390</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="./danilo_joksimovic.pdf">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/djoksimo" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/djoksimo" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-
-    <h1 style="color: white; background-color: black;">Page under maintenance</h1>
-
-
+    <div class="text-center">
+        <div class="jumbotron jumbotron-fluid">
+            <embed class="resumeview" src="./Danilo Joksimovic Resume.pdf" width="475px" height="650px" />
+        </div>
+    </div>
     <footer class="copyright"><br><br>Copyright &copy 2018 Danilo Joksimovic</footer>
     </div>
 

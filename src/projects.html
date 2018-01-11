@@ -5,14 +5,85 @@
 <head>
     <meta charset="utf-8" />
     <title>Projects</title>
-    <link href="./script.js" rel="javascript">
+    <script src="./jquery-3.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
+    <link href="./projectsstyle.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav navbar-expand-md">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./experience.html">Experience</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutme.html">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop">
+                                    Contact
+                                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item email">Email</a>
+                        <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
+                        <a class="dropdown-item emailname" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                        <a class="dropdown-item phone">Phone</a>
+                        <input type="text" value="(416) 804-0390" id="myInput">
+                        <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">(416) 804-0390</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="./danilo_joksimovic.pdf">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/djoksimo" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/djoksimo" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h1 style="color: white; background-color: black;">Under Maintenance :(</h1>
+    <div class="text-center">
+        <div class="jumbotron jumbotron-fluid">
+            <div>
+                <br><br>
+                <h1>Projects</h1>
+                <br><br>
+            </div>
+            <div class="backgrnd">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Photos/dhmodestroy1.jpg" class="slideimage" alt="DHMO Destroyer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Photos/dhmodestroy2.jpg" class="slideimage" alt="waterloo">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
