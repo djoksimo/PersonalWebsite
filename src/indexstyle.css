@@ -38,7 +38,9 @@ footer {
 
 /*styles for experience.html*/
 
-.resumeview {}
+ul {
+    list-style-type: none;
+}
 
 
 /*
