@@ -61,6 +61,20 @@ function copyValue() {
     document.execCommand('copy');
 }
 
+//Loading Screen
+
+var timeSpin;
+
+function loadScreen() {
+    timeSpin = setTimeout(showPage, 400);
+}
+
+function showPage() {
+    document.getElementById("loading-wrapper").style.display = "none";
+
+    document.getElementById("myDiv").style.display = "block";
+}
+
 /*function ScrollToBottom() {
             window.scrollTo(0, document.body.scrollHeight);
         }

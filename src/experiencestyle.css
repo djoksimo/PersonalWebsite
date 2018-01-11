@@ -1,0 +1,9 @@
+ul {
+    list-style-type: none;
+}
+
+#myInput {
+    display: none;
+    width: 0;
+    height: 0;
+}
