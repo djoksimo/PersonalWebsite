@@ -4,6 +4,19 @@
     height: 0;
 }
 
+.scrollarrowexperience,
+.scrollarrowprojects,
+.scrollarrowabout {
+    color: black;
+}
+
+.scrollarrowexperience:hover,
+.scrollarrowprojects:hover,
+.scrollarrowabout:hover {
+    color: rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
 .container {
     overflow-y: auto;
 }
@@ -13,12 +26,8 @@
 }
 
 .title {
-    font-size: 55px;
+    font-size: 70px;
     font-family: 'Roboto', sans-serif;
-}
-
-.jumbotron {
-    text-align: left;
 }
 
 .mephoto {
@@ -37,6 +46,114 @@ footer {
 .phonename:hover,
 .emailname:hover {
     cursor: pointer;
+}
+
+
+/*about*/
+
+.abouttitle {
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.marathon {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.container {
+    overflow-y: auto;
+}
+
+.introlist {
+    text-align: left;
+}
+
+.aboutlist {
+    text-align: left;
+}
+
+.serbiaflag {
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+}
+
+.waterpolo1 {
+    width: 500px;
+    height: 450px;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block
+}
+
+.waterpolo1:hover,
+.marathon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.mephoto {
+    background-color: rgb(33, 90, 128);
+    width: 15%;
+    height: 15%;
+}
+
+.copyright {
+    text-align: left;
+    bottom: 2px;
+    right: 3px;
+}
+
+.photoscopy {
+    text-align: left;
+    bottom: 2px;
+    left: 3px;
+}
+
+.phonename:hover,
+.emailname:hover {
+    cursor: pointer;
+}
+
+
+/*experience*/
+
+.courselist {
+    list-style-type: none;
+}
+
+
+/*projects*/
+
+.backgrnd {
+    background-color: rgb(3, 3, 73);
+}
+
+.projecttitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.slideimage {
+    max-width: 400px;
+    max-height: 300px;
+    vertical-align: middle;
+}
+
+.carousel {
+    max-width: 650px;
+    height: initial;
+    left: 29%;
+    right: 29%
 }
 
 

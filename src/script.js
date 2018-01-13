@@ -1,3 +1,19 @@
+function scrollToExperience() {
+    var experience = document.getElementById("experience");
+    zenscroll.to(experience);
+}
+
+function scrollToProjects() {
+    var projects = document.getElementById("projects");
+    zenscroll.to(projects);
+}
+
+function scrollToAbout() {
+    var about = document.getElementById("about");
+    zenscroll.to(about);
+}
+
+
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
@@ -71,7 +87,8 @@ function loadScreen() {
 
 function showPage() {
     document.getElementById("loading-wrapper").style.display = "none";
-
+    document.getElementById("loading-text").style.display = "none";
+    document.getElementById("loading-content").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
 }
 
