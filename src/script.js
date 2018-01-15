@@ -13,7 +13,6 @@ function scrollToAbout() {
     zenscroll.to(about);
 }
 
-
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
