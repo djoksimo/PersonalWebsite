@@ -1,5 +1,5 @@
-Personal website created using HTML, CSS, JS, jQuery, and Node.js
-Purpose of Website: For potential employers
-Will incorporate bootstrap later
+Personal website created using HTML, CSS, JS, jQuery, and Bootstrap4
+Purpose of Website: So that potential employers can get to know me better
 Domain: www.danilojoksimovic.com
-Still a work in progress
+Still a WIP,
+Will incorporate Node.js later
