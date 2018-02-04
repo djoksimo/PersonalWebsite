@@ -1,39 +1,55 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <title>Danilo Joksimovic</title>
-    <script src="./jquery-3.2.1.min.js"></script>
-    <link rel="icon" type="image/gif" href="./Photos/favicon.gif">
+		<meta name="viewport", initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Danilo Joksimovic</title>
+	<script src="./scrollreveal-master/dist/scrollreveal.js"></script>
+	<script src="./scrollreveal-master/dist/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+		if (sr.isSupported()) {
+			document.documentElement.classList.add('sr');
+		}
+	</script>
+	<style>
+		.sr .fooReveal { visibility: hidden; }
+	</style>
+	<script src="./jquery-3.2.1.min.js"></script>
+    <link rel="icon" type="image/gif" href="./Photos/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="./script.js"></script>
+		<!--<script src="./scrollreveal-master/dist/scrollreveal.min.js"></script>-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet">
-    <link href="./indexstyle.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="./indexstyle.css" type="text/css" rel="stylesheet">
 </head>
 
-
-<body onload="loadScreen()" style="margin:0;" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body onload="loadScreen();" style="margin:0;" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="loading-wrapper">
         <div id="loading-text">LOADING</div>
         <div id="loading-content"></div>
     </div>
 
     <div style="display:none;" id="myDiv" class="animate-bottom">
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <div class="container-fluid">
                 <ul class="navbar-nav mb-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" onclick="scrollToExperience()">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" onclick="scrollToProjects()">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" onclick="scrollToAbout()">About</a></li>
+								</ul>
+							<ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop">
                             Contact
@@ -47,51 +63,52 @@
                             <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">(416) 804-0390</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="./danilo_joksimovic.pdf">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank" href="./Danilo Joksimovic Resume.pdf">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/djoksimo" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/djoksimo" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron jumbotron-fluid section" style="background:transparent !important" id="home">
+        <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer section" id="home">
             <div class="container">
-                <h1 class="title text-left"><br>Danilo Joksimovic</h1><br>
-                <br>
-                <h2 class="text-left">
-                    Welcome to my website<br><br>
-                </h2>
-                <p class="text-left">
+								<img src="./Photos/mephoto.jpg" alt="Photo of Me couldn't load" class="mephoto foo foo-1"/>
+                <h1 class="title text-left"><br>HELLO WORLD<i class="fa fa-hand-spock-o" aria-hidden="true"></i></h1><br>
+                <div class="text-left">
+									<span class = "blink"><i class="fa fa-angle-right introarrow fa-3x"  onclick="scrollToIntro()"></i><a class="welcome" onscroll="scrollToIntro()"  onclick="scrollToIntro()">Welcome to my personal website...</a></span>
+								</div><br>
+
+                <p class="text-left intro foo foo-1">
                     My name is Danilo Joksimovic and I am a
                     <a href="https://uwaterloo.ca/software-engineering/about-software-engineering" target="_blank"> Software Engineering </a> student at the University of Waterloo.
                     <br>I am currently seeking a 4 month software engineering internship from May-August 2018.
                     <br>I made this website to showcase my work experience, my interest in the software engineering industry, and to tell you a little bit about myself.
                     <br>As you surf through my website, you’ll be able to see all my collaborative and personal
-                    <a classs="linkproject linkwaterloo" href="./projects.html">projects</a> (including this website).
+                    <a classs="linkproject linkwaterloo" href="#projects">projects</a> (including this website).
                     <br><br>Feel free to check out my
                     <a class="linkgit linkwaterloo" href="https://github.com/djoksimo" target="_blank">GitHub</a> account,
                     <a class="linkedin linkwaterloo" href="https://www.linkedin.com/in/danilo-joksimovic-8317a0152/" target="_blank">LinkedIn</a> account, and
                     <a class="linkwaterloo" href="./Danilo Joksimovic Resume.pdf" target="_blank"> resume</a>.
                 </p>
                 <div class="text-center">
-                    <br><i class="fa fa-angle-down scrollarrowexperience fa-5x" onclick="scrollToExperience()"></i><br>
+                    <br><i class="fa fa-angle-down scrollarrowexperience fa-5x" onclick="scrollToExperience()"></i>
                 </div>
             </div>
         </div>
 
-        <div class="text-center">
-            <div class="jumbotron jumbotron-fluid" id="experience">
-                <h1 class="head">University of Waterloo Coursework</h1><br>
+        <div class="text-center" style="color: white;	">
+            <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer" style="background-color:  #1aa3ff" id="experience">
+                <h1 class="experiencetitle foo foo-1">University of Waterloo Coursework</h1><br>
 
-                <h3>1B Courses</h3>
-                <ul class="courselist">
+                <h3 class="foo foo-1">1B Courses</h3>
+                <ul class="courselist foo foo-1">
                     <li>CS 138 - Introduction to Data Abstraction and Implementation</li>
                     <li>Math 119 - Caculus 2</li>
                     <li>ECE 124 - Digital Circuits</li>
                     <li>ECE 140 - Linear Circuits</li>
                     <li>ECE 106 - Electricity and Magnetism</li>
                 </ul>
-                <h3>1A Courses</h3>
-                <ul class="courselist">
+                <h3 class="foo foo-1">1A Courses</h3>
+                <ul class="courselist foo foo-1">
                     <li>Math 135 - Algebra, Mathematical Proofs</li>
                     <li>Math 117 - Calculus 1</li>
                     <li>Math 115 - Linear Algebra</li>
@@ -100,90 +117,104 @@
                     <li>ECE 105 - Classical Mechanics</li>
                 </ul>
                 <br>
-                <div class="resumepreview">
-                    <embed src="./Danilo Joksimovic Resume.pdf" width="450px" height="630px" internalinstanceid="4" title="My Resume">
-                </div>
+								<object data="Danilo Joksimovic Resume.pdf" type="application/pdf" width="100%" height="100%">
+									<p class ="courselist">Download my <a style="color: lightcyan; text-decoration: underline;" href="Danilo Joksimovic Resume.pdf">Resume!</a></p>
+								</object>
+                <!--<div class="resumepreview">-->
+                    <!--<embed src="./Danilo Joksimovic Resume.pdf" width="450px" height="630px" internalinstanceid="4" title="My Resume">-->
+                <!--</div>-->
                 <div class="text-center">
-                    <br><i class="fa fa-angle-down scrollarrowprojects fa-5x" onclick="scrollToProjects()"></i><br>
+                    <br><i class="fa fa-angle-down scrollarrowprojects fa-5x" onclick="scrollToProjects()"></i>
                 </div>
             </div>
         </div>
 
         <div class="text-center">
-            <div class="jumbotron jumbotron-fluid" style="background:transparent !important;" id="projects">
+            <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer" style="background-color: #1aa3ff" id="projects">
                 <div>
-                    <h1 class="projecttitle">Projects</h1>
-                    <br><br>
+                    <h1 class="projecttitle foo foo-1">Projects</h1><br><br>
                 </div>
-                <div class="backgrnd">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
+								<div class="text-center">
+									<br><h2 class="projectname">The DHMO Destroyer</h2>
+									<a href="https://github.com/djoksimo/DHMODestroyer" target="_blank">
+                   <img src="./Photos/dhmodestroy1.jpg" class="rounded-circle img-fluid dhmodestroy-img" width="600" height="500" alt="DHMO Destroyer">
+									</a>
+									<br><br>
+									<div class="text-center">
+										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#demo">Find Out More</button><br>
+										<div id="demo" class="collapse projectinfo">
+											<br>DHMO Destroyer is an Arduino based remote control boat with an Android app as the controller.<br>
 
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./Photos/dhmodestroy1.jpg" class="slideimage" alt="DHMO Destroyer">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Photos/dhmodestroy2.jpg" class="slideimage" alt="waterloo">
-                            </div>
-
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+											The Android controller app was built using Kotlin and it sent serial data to the Arduino Uno board situated on top of the DHMO Destroyer.
+											The Arduino took in this serial data, and converted into commands which controlled two DC motors which powered the propellors and one servo motor which controlled the rudder.
+										</div>
+									</div>
+									<br><h2 class="projectname">Mountain Views</h2>
+									<a href="https://github.com/djoksimo/MountainViews" target="_blank">
+										<img src="./Photos/mountainviews.png" class="rounded-circle img-fluid mountainviews-img" width="600" height="600" alt="Mountain Views">
+									</a>
+									<br><br>
+									<div class="text-center">
+										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#mountainviewstext">Find Out More</button><br>
+										<div id="mountainviewstext" class="collapse projectinfo">
+											<br>Mountain Views is a social media platform based on Android and the Web that allows users to post pictures, trip reports, view trip reviews, and take care of their friends.
+											The Android application is paired with a Myo Armband, meant to be worn while on the trails on the slopes, that can be activated with unique arm movements to send out
+											a distress signal to fellow adventurers and rescue teams.<br>
+										</div>
+									</div>
+									<br><br><h2 class="projectname">Flappy Future</h2>
+									<a href="https://github.com/djoksimo/FlappyFuture" target="_blank">
+										<img src="./Photos/flappyfuture.jpg" class="rounded-circle img-fluid flappyfuture-img" width="600" height="600" alt="Flappy Future">
+									</a>
+									<br><br>
+									<div class="text-center">
+										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#flappytext">Find Out More</button><br>
+										<div id="flappytext" class="collapse projectinfo">
+											<br>Flappy Future incorporates visual feedback + hand motions into a virtually immersive reality designed with cutting edge technology.
+											Users test their reaction times and coordination as they navigate an endless maze in a hands free experience.
+											Target mainly to younger kids, it is our hope that eventually games like these can have a larger benefit for kid coordination and
+											social awareness, something traditional that video games have been leaving teens without.
+											With a wider range of stimulus and user input, Flappy Future can engage players on levels not traditionally achievable by video games today. <br>
+										</div>
+									</div>
+									<br><br>
+								</div>
+						<div class="text-center">
+							<br><i class="fa fa-angle-down scrollarrowabout fa-5x" onclick="scrollToAbout()"></i>
+						</div>
+					</div>
         </div>
-        <div class="text-center">
-            <br><i class="fa fa-angle-down scrollarrowabout fa-5x" onclick="scrollToAbout()"></i><br>
-        </div>
-        <div class="jumbotron jumbotron-fluid" id="about">
+
+        <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer" style="color: white; background-color:  #1aa3ff" id="about">
             <div class="container">
-                <h1 class="abouttitle">About Me</h1>
-
-                <img src="./Photos/serbiaflag.png" alt="serbian flag" class="serbiaflag img-fluid rounded-left rounded-right float-right"><br>
-
+                <h1 class="abouttitle foo foo-1 text-left">About Me</h1><br>
                 <div>
-                    <ul class="introlist">
+                    <ul class="introlist foo foo-1">
                         <li>I was born and raised in Toronto, Ontario</li>
                         <li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
                         <li>I speak English, French and Sebian fluently</li>
                         <li>I have travelled to over 27 countries, 17 of which are in Europe</li>
                         <li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
-                        <li>I worked for Uber Eats Technologies Inc. during my first semester of University</li>
+                        <li>I worked for Uber Technologies Inc. during my first semester of University</li>
                         <li>I played water polo competitively in a national league for six years</li>
                     </ul>
-                    <br>
-                    <h1 class="head">Marathon</h1>
+										<br>
+                    <h1 class="head foo foo-1">Marathon</h1><br>
 
-                    <ul class="aboutlist">
+                    <ul class="aboutlist foo foo-1">
                         <li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
                         <li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
                         <li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
                     </ul>
-                    <br><br><br>
-                    <div class="text-center">
+                    <br>
+                    <div class="text-center foo foo-1">
                         <a href="https://speedrivertiming.com/res/mt616.htm# 4" target="_blank">
                             <img src="./Photos/marathon.jpg" alt="marathon picture" class="align-self-center marathon rounded-bottom">
                         </a>
                     </div>
-                    <br><br><br>
-                    <h1 class="head">Water Polo</h1>
-
-                    <ul class="aboutlist">
+                    <br>
+                    <h1 class="head foo foo-1">Water Polo</h1><br>
+                    <ul class="aboutlist foo foo-1">
                         <li>I played for the Toronto Golden Jets water polo club for six years</li>
                         <li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
                         <li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
@@ -191,8 +222,8 @@
                         <li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
                         <li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
                     </ul>
-                    <br><br>
-                    <div class="text-center">
+                    <br>
+                    <div class="text-center foo foo-1">
                         <a href="http://www.tdsb.on.ca/sports/Water-Polo/Boys-Water-Polo" target="_blank">
                             <img src="./Photos/waterpoloteam.jpg" alt="waterpolo image" class="rounded waterpolo1 img-fluid">
                         </a>
@@ -200,9 +231,10 @@
                 </div>
             </div>
         </div>
-        <footer class="copyright"><br>Copyright &copy 2018 Danilo Joksimovic </footer>
-        <footer class="photoscopy">All images are personally owned, believed to be of public domain, and/or are available for non-commercial use.</footer>
+        <footer class="text-center copyright"><br>Copyright &copy 2018 Danilo Joksimovic </footer>
+        <footer class="text-center photoscopy">All images are personally owned, believed to be of public domain, and/or are available for non-commercial use.</footer>
     </div>
+
 
     <!--Smartphone
     <div class="smartphone">
@@ -210,7 +242,12 @@
             <iframe src="index.html" style="width:100%;border:none;height:100%" />
         </div>
     </div>-->
-    <script src="zenscroll-min.js"></script>
+		<script>
+			sr.reveal('.foo-1');
+		</script>
+
+
+		<script src="zenscroll-min.js"></script>
 </body>
 
 </html>

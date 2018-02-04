@@ -4,10 +4,52 @@
     height: 0;
 }
 
-.scrollarrowexperience,
+.navbar{
+	height: 50px;
+	background-color: #005cbf;
+}
+@-webkit-keyframes blinker {
+	from {opacity: 1.0;}
+	to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+.welcome{
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 40px;
+}
+.introarrow{
+	color: black;
+}
+.welcome:hover,
+.introarrow:hover{
+	opacity: 0.7;
+}
+
+.mephoto{
+	display: inline-block;
+	margin-top: 20%;
+	min-width: 300px;
+	max-height: 475px;
+	float: right;
+	border-radius: 1%;
+	border: silver solid 19px;
+}
+
+.scrollarrowexperience{
+	color: black;
+}
 .scrollarrowprojects,
-.scrollarrowabout {
-    color: black;
+.scrollarrowabout{
+    color: white;
 }
 
 .scrollarrowexperience:hover,
@@ -19,6 +61,10 @@
 
 .container {
     overflow-y: auto;
+		font-size: 26px;
+}
+.dropdown-menu{
+	margin-top: 6px;
 }
 
 .body {
@@ -35,12 +81,12 @@
     background-color: rgb(33, 90, 128);
     width: 15%;
     height: 15%;
+		margin-left: 10px;
 }
 
-footer {
-    text-align: right;
-    bottom: 2px;
-    right: 3px;
+.copyright,
+.photoscopy{
+    text-align: center;
 }
 
 .phonename:hover,
@@ -56,25 +102,24 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-.body {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
 .marathon {
     max-width: 50%;
     max-height: 50%;
-}
-
-.container {
-    overflow-y: auto;
+		font-size: 26px;
 }
 
 .introlist {
     text-align: left;
+	 font-size: 26px;
 }
 
 .aboutlist {
     text-align: left;
+		font-size: 26px;
 }
 
 .serbiaflag {
@@ -88,7 +133,7 @@ footer {
     height: 450px;
     display: block;
     border: 2px solid rgb(255, 255, 255);
-    display: inline-block
+    display: inline-block;
 }
 
 .waterpolo1:hover,
@@ -125,18 +170,43 @@ footer {
 
 .courselist {
     list-style-type: none;
+		font-size: 22px;
 }
 
 
 /*projects*/
 
 .backgrnd {
-    background-color: rgb(3, 3, 73);
+    background-color: #1aa3ff;
 }
 
+.flappyfuture-img:hover,
+.mountainviews-img:hover,
+.dhmodestroy-img:hover{
+	opacity: 0.8;
+}
+
+.projectinfo{
+	text-align: left;
+	padding: 20px;
+	color: white;
+	font-size: 25px;
+}
 .projecttitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
+		color: white;
+}
+
+.projectname{
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px;
+	color: white
+}
+
+.experiencetitle{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
 }
 
 .body {
@@ -149,13 +219,10 @@ footer {
     vertical-align: middle;
 }
 
-.carousel {
-    max-width: 650px;
-    height: initial;
-    left: 29%;
-    right: 29%
+.head{
+	font-size: 50px;
+	text-align: left;
 }
-
 
 /*loader */
 

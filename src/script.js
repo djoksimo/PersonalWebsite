@@ -1,3 +1,12 @@
+window.sr = ScrollReveal();
+if (sr.isSupported()) {
+	document.documentElement.classList.add('sr');
+}
+
+function scrollToIntro(){
+	zenscroll.toY(9);
+	$("span").removeClass("blink");
+}
 function scrollToExperience() {
     var experience = document.getElementById("experience");
     zenscroll.to(experience);
@@ -12,6 +21,12 @@ function scrollToAbout() {
     var about = document.getElementById("about");
     zenscroll.to(about);
 }
+
+// window.onscroll = function() {changeNav()};
+// function changeNav() {
+// 	//code here
+// }
+
 
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
