@@ -15,7 +15,7 @@
 		}
 	</script>
 	<style>
-		.sr .fooReveal { visibility: hidden; }
+		.sr .foo { visibility: hidden; }
 	</style>
 	<script src="./jquery-3.2.1.min.js"></script>
     <link rel="icon" type="image/gif" href="./Photos/favicon.png">
@@ -24,8 +24,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script src="./script.js"></script>
-		<!--<script src="./scrollreveal-master/dist/scrollreveal.min.js"></script>-->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<script src="./script.js"></script>
+	  <script src="./scrollreveal-master/dist/scrollreveal.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -57,10 +58,10 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item email">Email</a>
                             <input type="text" value="djoksimo@uwaterloo.ca" id="myInput">
-                            <a class="dropdown-item emailname" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">djoksimo@uwaterloo.ca</a>
+                            <a class="dropdown-item emailname" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue('.emailname'); changeTooltip1()">djoksimo@uwaterloo.ca</a>
                             <a class="dropdown-item phone">Phone</a>
                             <input type="text" value="(416) 804-0390" id="myInput">
-                            <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue()">(416) 804-0390</a>
+                            <a class="dropdown-item phonename" data-toggle="tooltip" data-placement="bottom" title="Copy" onclick="copyValue('.phonename'); changeTooltip2()">(416) 804-0390</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" target="_blank" href="./Danilo Joksimovic Resume.pdf">Resume</a></li>
@@ -71,10 +72,10 @@
         </nav>
         <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer section" id="home">
             <div class="container">
-								<img src="./Photos/mephoto.jpg" alt="Photo of Me couldn't load" class="mephoto foo foo-1"/>
+
                 <h1 class="title text-left"><br>HELLO WORLD<i class="fa fa-hand-spock-o" aria-hidden="true"></i></h1><br>
                 <div class="text-left">
-									<span class = "blink"><i class="fa fa-angle-right introarrow fa-3x"  onclick="scrollToIntro()"></i><a class="welcome" onscroll="scrollToIntro()"  onclick="scrollToIntro()">Welcome to my personal website...</a></span>
+									<span><i class="fa fa-angle-right introarrow fa-3x blink"  onclick="scrollToIntro()"></i><a class="welcome blink" onscroll="scrollToIntro()"  onclick="scrollToIntro()">Welcome to my personal website...</a></span>
 								</div><br>
 
                 <p class="text-left intro foo foo-1">
@@ -90,19 +91,43 @@
                     <a class="linkwaterloo" href="./Danilo Joksimovic Resume.pdf" target="_blank"> resume</a>.
                 </p>
                 <div class="text-center">
-                    <br><i class="fa fa-angle-down scrollarrowexperience fa-5x" onclick="scrollToExperience()"></i>
+									<br><span class="blink "><i class="fa fa-angle-down scrollarrowexperience fa-5x foo foo-1" onclick="scrollToExperience()"></i></span>
                 </div>
             </div>
         </div>
 
         <div class="text-center" style="color: white;	">
             <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer" style="background-color:  #1aa3ff" id="experience">
+
+								<h1 class="skillstitle foo foo-1">Skills</h1><br>
+								<div class="container">
+									<div class="row foo foo-1">
+										<div class="col"><i class="devicon devicon-c-line"></i></div>
+										<div class="col"><i class="devicon devicon-cplusplus-line"></i></div>
+										<div class="col"><i class="devicon devicon-csharp-line"></i></div>
+										<div class="col"><i class="devicon devicon-java-plain-wordmark"></i></div>
+									</div><br>
+									<div class="row foo foo-1">
+										<div class="col"><i class="devicon devicon-javascript-plain"></i></div>
+										<div class="col"><i class="devicon devicon-jquery-plain-wordmark"></i></div>
+										<div class="col"><i class="devicon devicon-nodejs-plain-wordmark"></i></div>
+										<div class="col"><i class="devicon devicon-react-original-wordmark"></i></div>
+									</div><br>
+									<div class="row foo foo-1">
+										<div class="col"><i class="devicon devicon-git-plain-wordmark"></i></div>
+										<div class="col"><i class="devicon devicon-amazonwebservices-plain-wordmark"></i></div>
+										<div class="col"><i class="devicon devicon-ubuntu-plain-wordmark"></i></div>
+										<div class="col"><i class="devicon devicon-phpstorm-plain-wordmark"></i></div>
+									</div><br>
+									<br>
+								</div>
+
                 <h1 class="experiencetitle foo foo-1">University of Waterloo Coursework</h1><br>
 
                 <h3 class="foo foo-1">1B Courses</h3>
                 <ul class="courselist foo foo-1">
                     <li>CS 138 - Introduction to Data Abstraction and Implementation</li>
-                    <li>Math 119 - Caculus 2</li>
+                    <li>Math 119 - Calculus 2</li>
                     <li>ECE 124 - Digital Circuits</li>
                     <li>ECE 140 - Linear Circuits</li>
                     <li>ECE 106 - Electricity and Magnetism</li>
@@ -117,14 +142,14 @@
                     <li>ECE 105 - Classical Mechanics</li>
                 </ul>
                 <br>
-								<object data="Danilo Joksimovic Resume.pdf" type="application/pdf" width="100%" height="100%">
-									<p class ="courselist">Download my <a style="color: lightcyan; text-decoration: underline;" href="Danilo Joksimovic Resume.pdf">Resume!</a></p>
-								</object>
-                <!--<div class="resumepreview">-->
-                    <!--<embed src="./Danilo Joksimovic Resume.pdf" width="450px" height="630px" internalinstanceid="4" title="My Resume">-->
-                <!--</div>-->
+								<!--<object data="Danilo Joksimovic Resume.pdf" type="application/pdf" width="100%" height="100%">-->
+									<p class ="courselist foo foo-1">Check out my <a style="color: lightcyan; text-decoration: underline;" href="Danilo Joksimovic Resume.pdf">Resume!</a></p>
+								<!--</object>-->
+                <!--&lt;!&ndash;<div class="resumepreview">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<embed src="./Danilo Joksimovic Resume.pdf" width="450px" height="630px" internalinstanceid="4" title="My Resume">&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
                 <div class="text-center">
-                    <br><i class="fa fa-angle-down scrollarrowprojects fa-5x" onclick="scrollToProjects()"></i>
+                    <span class="blink"><br><i class="blink fa fa-angle-down scrollarrowprojects fa-5x" onclick="scrollToProjects()"></i></span>
                 </div>
             </div>
         </div>
@@ -132,55 +157,228 @@
         <div class="text-center">
             <div data-scroll-reveal class="jumbotron jumbotron-fluid fooContainer" style="background-color: #1aa3ff" id="projects">
                 <div>
-                    <h1 class="projecttitle foo foo-1">Projects</h1><br><br>
+                    <h1 class="projecttitle foo foo-1">Projects</h1><br><br><br>
                 </div>
-								<div class="text-center">
-									<br><h2 class="projectname">The DHMO Destroyer</h2>
-									<a href="https://github.com/djoksimo/DHMODestroyer" target="_blank">
-                   <img src="./Photos/dhmodestroy1.jpg" class="rounded-circle img-fluid dhmodestroy-img" width="600" height="500" alt="DHMO Destroyer">
-									</a>
-									<br><br>
-									<div class="text-center">
-										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#demo">Find Out More</button><br>
-										<div id="demo" class="collapse projectinfo">
-											<br>DHMO Destroyer is an Arduino based remote control boat with an Android app as the controller.<br>
+									<div class="container">
+									<div class="row">
+										<!--DHMO Destroyer Modal-->
+										<div class="col">
+											<a class="dhmodestroy-img"  data-toggle="modal"  data-target="#DHMOModal">
+												<img src="./Photos/dhmodestroy1.jpg" class="rounded-circle dhmodestroy-img foo foo-1" alt="DHMO Destroyer">
+											</a>
+											<br><br><h2 class="projectname foo foo-1">The DHMO Destroyer</h2><br>
+											<div class="modal fade" id="DHMOModal">
+												<div class="modal-dialog modal-dialog-centered">
+													<div class="modal-content">
+														<!-- Modal Header -->
+														<div class="modal-header text-center">
+															<h4 class="modal-title">The DHMO Destroyer</h4>
+															<button type="button" class="close" style="color: white;"data-dismiss="modal">&times;</button>
+														</div>
+														<!-- Modal body -->
+														<div class="modal-body" style="background-color: #005cbf">
+															<div class="projectinfo">
+																<div id="DHMOSlide" class="carousel slide" data-ride="carousel">
 
-											The Android controller app was built using Kotlin and it sent serial data to the Arduino Uno board situated on top of the DHMO Destroyer.
-											The Arduino took in this serial data, and converted into commands which controlled two DC motors which powered the propellors and one servo motor which controlled the rudder.
+																	<!-- Indicators -->
+																	<ul class="carousel-indicators">
+																		<li data-target="#DHMOSlide" data-slide-to="0" class="active"></li>
+																		<li data-target="#DHMOSlide" data-slide-to="1"></li>
+																		<li data-target="#DHMOSlide" data-slide-to="2"></li>
+																	</ul>
+
+																	<!-- The slideshow -->
+																	<div class="carousel-inner">
+																		<div class="carousel-item active">
+																			<div class="text-center">
+																			<video width="300" height="250px" autoplay muted>
+																				<source src="./Photos/demo.mp4" type="video/mp4">
+																				Your browser does not support the video tag.
+																			</video>
+																			</div>
+																		</div>
+																		<div class="carousel-item">
+																			<div class="text-center">
+																				<img src="./Photos/frame.jpg" width="300px" height="250px" alt="DHMO-img">
+																			</div>
+																		</div>
+																		<div class="carousel-item">
+																			<div class="text-center">
+																				<img src="./Photos/dhmodestroy2.jpg" width="300px" height="250px" alt="DHMO-img">
+																			</div>
+																		</div>
+																	</div>
+
+																	<!-- Left and right controls -->
+																	<a class="carousel-control-prev" href="#DHMOSlide" data-slide="prev">
+																		<span class="carousel-control-prev-icon"></span>
+																	</a>
+																	<a class="carousel-control-next" href="#DHMOSlide" data-slide="next">
+																		<span class="carousel-control-next-icon"></span>
+																	</a>
+
+																</div><br>
+																The DHMO Destroyer is an Arduino based remote control boat with an Android app as the controller.<br>
+
+																The Android controller app was built using Kotlin and it sent serial data to the Arduino Uno board situated on top of the DHMO Destroyer.
+																The Arduino took in this serial data, and converted into commands which controlled two DC motors which powered the propellors and one servo motor which controlled the rudder.<br>
+																Find out <a href="https://github.com/djoksimo/DHMODestroyer" target="_blank" class="link">more!</a><br>
+															</div>
+														</div>
+
+														<!-- Modal footer -->
+														<div class="modal-footer">
+															<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+														</div>
+
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									<br><h2 class="projectname">Mountain Views</h2>
-									<a href="https://github.com/djoksimo/MountainViews" target="_blank">
-										<img src="./Photos/mountainviews.png" class="rounded-circle img-fluid mountainviews-img" width="600" height="600" alt="Mountain Views">
-									</a>
-									<br><br>
-									<div class="text-center">
-										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#mountainviewstext">Find Out More</button><br>
-										<div id="mountainviewstext" class="collapse projectinfo">
-											<br>Mountain Views is a social media platform based on Android and the Web that allows users to post pictures, trip reports, view trip reviews, and take care of their friends.
-											The Android application is paired with a Myo Armband, meant to be worn while on the trails on the slopes, that can be activated with unique arm movements to send out
-											a distress signal to fellow adventurers and rescue teams.<br>
+										<!--Mountain Views Modal-->
+										<div class="col">
+												<a class="mountainviews-img"  data-toggle="modal"  data-target="#MountainModal">
+													<img src="./Photos/mountainviews.png" class="rounded-circle mountainviews-img img-fluid  foo foo-1" alt="Mountain Views">
+												</a>
+												<br><br><h2 class="projectname foo foo-1">Mountain Views</h2><br>
+												<div class="modal fade" id="MountainModal">
+													<div class="modal-dialog modal-dialog-centered">
+														<div class="modal-content">
+															<!-- Modal Header -->
+															<div class="modal-header text-center">
+																<h4 class="modal-title">Mountain Views</h4>
+																<button type="button" class="close" style="color: white;" data-dismiss="modal">&times;</button>
+															</div>
+															<!-- Modal body -->
+															<div class="modal-body">
+																<div class="projectinfo">
+																	<div id="MountainSlide" class="carousel slide" data-ride="carousel">
+
+																		<!-- Indicators -->
+																		<ul class="carousel-indicators">
+																			<li data-target="#MountainSlide" data-slide-to="0" class="active"></li>
+																			<li data-target="#MountainSlide" data-slide-to="1"></li>
+																			<li data-target="#MountainSlide" data-slide-to="2"></li>
+																		</ul>
+
+																		<!-- The slideshow -->
+																		<div class="carousel-inner">
+																			<div class="carousel-item active">
+																				<div class="text-center">
+																					<img src="./Photos/intro.png" width="300px" height="320px" alt="Mountain-img">
+																				</div>
+																			</div>
+																			<div class="carousel-item">
+																				<div class="text-center">
+																					<img src="./Photos/pagescreen.jpg" width="350px" height="320px" alt="Mountain-img">
+																				</div>
+																			</div>
+																			<div class="carousel-item">
+																				<div class="text-center">
+																					<img src="./Photos/mountainviewsapp.png" width="300px" height="320px" alt="Mountain	-img">
+																				</div>
+																			</div>
+																		</div>
+																		<!-- Left and right controls -->
+																		<a class="carousel-control-prev" href="#MountainSlide" data-slide="prev">
+																			<span class="carousel-control-prev-icon"></span>
+																		</a>
+																		<a class="carousel-control-next" href="#MountainSlide" data-slide="next">
+																			<span class="carousel-control-next-icon"></span>
+																		</a>
+
+																	</div><br>
+																	Mountain Views is a social media platform based on Android and the Web that allows users to post pictures, trip reports, view trip reviews, and take care of their friends.
+																	The Android application is paired with a Myo Armband, meant to be worn while on the trails on the slopes, that can be activated with unique arm movements to send out
+																	a distress signal to fellow adventurers and rescue teams.<br>
+																	Find out <a href="https://github.com/djoksimo/MountainViews" target="_blank" class="link">more!</a><br>
+																</div>
+															</div>
+															<!-- Modal footer -->
+															<div class="modal-footer">
+
+																<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+															</div>
+													</div>
+												</div>
+											</div>
 										</div>
+										<div class="col">
+											<a class="mountainviews-img"  data-toggle="modal"  data-target="#FlappyModal">
+												<img src="./Photos/flappyfuture.jpg" class="rounded-circle flappyfuture-img foo foo-1" alt="Flappy Future">
+											</a>
+											<br><br><h2 class="projectname foo foo-1">Flappy Future</h2><br>
+											<div class="modal fade" id="FlappyModal">
+												<div class="modal-dialog modal-dialog-centered">
+													<div class="modal-content">
+														<!-- Modal Header -->
+														<div class="modal-header text-center">
+															<h4 class="modal-title">Flappy Future</h4>
+															<button type="button" class="close" style="color: white;" data-dismiss="modal">&times;</button>
+														</div>
+														<!-- Modal body -->
+														<div class="modal-body">
+
+																<div id="FlappySlide" class="carousel slide" data-ride="carousel">
+
+																	<!-- Indicators -->
+																	<ul class="carousel-indicators">
+																		<li data-target="#FlappySlide" data-slide-to="0" class="active"></li>
+																		<li data-target="#FlappySlide" data-slide-to="1"></li>
+																		<li data-target="#FlappySlide" data-slide-to="2"></li>
+																	</ul>
+
+																	<!-- The slideshow -->
+																	<div class="carousel-inner">
+																		<div class="carousel-item active">
+																			<div class="text-center">
+																				<video width="300" height="280px" autoplay muted>
+																					<source src="./Photos/flappydemo.mp4" type="video/mp4">
+																					Your browser does not support the video tag.
+																				</video>
+																			</div>
+																		</div>
+																		<div class="carousel-item">
+																			<div class="text-center">
+																				<img src="./Photos/flappy1.jpg" width="300px" height="280px" alt="flappy-img">
+																			</div>
+																		</div>
+																		<div class="carousel-item">
+																			<div class="text-center">
+																				<img src="./Photos/flappy2.jpg" width="300px" height="280px" alt="flappy-img">
+																			</div>
+																		</div>
+
+																	<!-- Left and right controls -->
+																	<a class="carousel-control-prev" href="#FlappySlide" data-slide="prev">
+																		<span class="carousel-control-prev-icon"></span>
+																	</a>
+																	<a class="carousel-control-next" href="#FlappySlide" data-slide="next">
+																		<span class="carousel-control-next-icon"></span>
+																	</a>
+																	</div>
+															</div>
+															<div class="projectinfo">
+																Flappy Future incorporates visual feedback and hand motions into a virtually immersive reality designed with cutting edge technology.
+																Users test their reaction times and coordination as they navigate an endless maze in a hands free experience.
+																Target mainly to younger kids, it is our hope that eventually games like these can have a larger benefit for kid coordination and
+																social awareness, something traditional that video games have been leaving teens without.
+																With a wider range of stimulus and user input, Flappy Future can engage players on levels not traditionally achievable by video games today. <br>
+																Find out <a href="https://github.com/djoksimo/FlappyFuture" target="_blank" class="link">more!</a><br>
+															</div>
+														</div>
+														<!-- Modal footer -->
+														<div class="modal-footer">
+															<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
 									</div>
-									<br><br><h2 class="projectname">Flappy Future</h2>
-									<a href="https://github.com/djoksimo/FlappyFuture" target="_blank">
-										<img src="./Photos/flappyfuture.jpg" class="rounded-circle img-fluid flappyfuture-img" width="600" height="600" alt="Flappy Future">
-									</a>
-									<br><br>
-									<div class="text-center">
-										<button type="button" class="btn btn-light btn-lg" data-toggle="collapse" data-target="#flappytext">Find Out More</button><br>
-										<div id="flappytext" class="collapse projectinfo">
-											<br>Flappy Future incorporates visual feedback + hand motions into a virtually immersive reality designed with cutting edge technology.
-											Users test their reaction times and coordination as they navigate an endless maze in a hands free experience.
-											Target mainly to younger kids, it is our hope that eventually games like these can have a larger benefit for kid coordination and
-											social awareness, something traditional that video games have been leaving teens without.
-											With a wider range of stimulus and user input, Flappy Future can engage players on levels not traditionally achievable by video games today. <br>
-										</div>
-									</div>
-									<br><br>
-								</div>
+							</div>
+						</div>
 						<div class="text-center">
-							<br><i class="fa fa-angle-down scrollarrowabout fa-5x" onclick="scrollToAbout()"></i>
+							<br><span class="blink"><i class="blink fa fa-angle-down scrollarrowabout fa-5x" onclick="scrollToAbout()"></i></span>
 						</div>
 					</div>
         </div>
@@ -189,45 +387,48 @@
             <div class="container">
                 <h1 class="abouttitle foo foo-1 text-left">About Me</h1><br>
                 <div>
-                    <ul class="introlist foo foo-1">
-                        <li>I was born and raised in Toronto, Ontario</li>
-                        <li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
-                        <li>I speak English, French and Sebian fluently</li>
-                        <li>I have travelled to over 27 countries, 17 of which are in Europe</li>
-                        <li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
-                        <li>I worked for Uber Technologies Inc. during my first semester of University</li>
-                        <li>I played water polo competitively in a national league for six years</li>
-                    </ul>
-										<br>
-                    <h1 class="head foo foo-1">Marathon</h1><br>
+									<div class="text-right foo foo-1">
+										<img src="./Photos/mephoto.jpg" alt="Photo of Me couldn't load" class="mephoto foo foo-1"/>
+									</div>
+									<ul class="introlist foo foo-1">
+											<li>I was born and raised in Toronto, Ontario</li>
+											<li>My parents moved to Canada in the 90s and worked as electrical engineers</li>
+											<li>I speak English, French and Serbian fluently</li>
+											<li>I have travelled to over 27 countries, 17 of which are in Europe</li>
+											<li>I am currently a student in the Software Engineering class of 2022 at the University of Waterloo</li>
+											<li>I worked for Uber Technologies Inc. during my first semester of University</li>
+											<li>I played water polo competitively in a national league for six years</li>
+									</ul>
+									<br>
+									<h1 class="head foo foo-1">Marathon</h1><br>
 
-                    <ul class="aboutlist foo foo-1">
-                        <li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
-                        <li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
-                        <li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
-                    </ul>
-                    <br>
-                    <div class="text-center foo foo-1">
-                        <a href="https://speedrivertiming.com/res/mt616.htm# 4" target="_blank">
-                            <img src="./Photos/marathon.jpg" alt="marathon picture" class="align-self-center marathon rounded-bottom">
-                        </a>
-                    </div>
-                    <br>
-                    <h1 class="head foo foo-1">Water Polo</h1><br>
-                    <ul class="aboutlist foo foo-1">
-                        <li>I played for the Toronto Golden Jets water polo club for six years</li>
-                        <li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
-                        <li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
-                        <li>In high school, I played for the Lawrence Park Collegiate Institute water polo team in the TDSSAA</li>
-                        <li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
-                        <li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
-                    </ul>
-                    <br>
-                    <div class="text-center foo foo-1">
-                        <a href="http://www.tdsb.on.ca/sports/Water-Polo/Boys-Water-Polo" target="_blank">
-                            <img src="./Photos/waterpoloteam.jpg" alt="waterpolo image" class="rounded waterpolo1 img-fluid">
-                        </a>
-                    </div>
+									<ul class="aboutlist foo foo-1">
+											<li>Between July 15th, 2016 and August 30th, 2016, I woke up at 5:30 a.m. five times a week to run 10km around my neighbourhood</li>
+											<li>After gaining confidence in my running endurance, I decided to sign up for a full marathon, because Carpe Diem</li>
+											<li>On September 11th, 2016, I competed in the MEC full marathon (42.2km) and made it to the finish line in 24th place.</li>
+									</ul>
+									<br>
+									<div class="text-center foo foo-1">
+											<a href="https://speedrivertiming.com/res/mt616.htm# 4" target="_blank">
+													<img src="./Photos/marathon.jpg" alt="marathon picture" class="align-self-center marathon rounded-bottom">
+											</a>
+									</div>
+									<br>
+									<h1 class="head foo foo-1">Water Polo</h1><br>
+									<ul class="aboutlist foo foo-1">
+											<li>I played for the Toronto Golden Jets water polo club for six years</li>
+											<li>When I turned 16, I started competing in the U19 National Championship league of Water Polo Canada</li>
+											<li>In November of 2016, I started competing with the Toronto Golden Jets, the national champions, in the Men’s League of Water Polo (MLWP) of Water Polo Canada</li>
+											<li>In high school, I played for the Lawrence Park Collegiate Institute water polo team in the TDSSAA</li>
+											<li>In the 2016-2017 season, I led the Lawrence Park C.I water polo team as captain and my school won its first City Champion title in Toronto District School Board history</li>
+											<li>I have travelled to British Columbia, Alberta, Quebec, Montenegro, and Serbia to compete in water polo</li>
+									</ul>
+									<br>
+									<div class="text-center foo foo-1">
+											<a href="http://www.tdsb.on.ca/sports/Water-Polo/Boys-Water-Polo" target="_blank">
+													<img src="./Photos/waterpoloteam.jpg" alt="waterpolo image" class="rounded waterpolo1 img-fluid">
+											</a>
+									</div>
                 </div>
             </div>
         </div>

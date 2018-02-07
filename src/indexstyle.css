@@ -5,8 +5,11 @@
 }
 
 .navbar{
-	height: 50px;
+	font-family: 'Roboto', sans-serif;
+	height: 63px;
 	background-color: #005cbf;
+	border-bottom: silver solid 5px;
+	box-shadow: #005cbf inset;
 }
 @-webkit-keyframes blinker {
 	from {opacity: 1.0;}
@@ -34,16 +37,6 @@
 	opacity: 0.7;
 }
 
-.mephoto{
-	display: inline-block;
-	margin-top: 20%;
-	min-width: 300px;
-	max-height: 475px;
-	float: right;
-	border-radius: 1%;
-	border: silver solid 19px;
-}
-
 .scrollarrowexperience{
 	color: black;
 }
@@ -60,11 +53,10 @@
 }
 
 .container {
-    overflow-y: auto;
 		font-size: 26px;
 }
 .dropdown-menu{
-	margin-top: 6px;
+	margin-top: 4px;
 }
 
 .body {
@@ -77,11 +69,15 @@
 }
 
 .mephoto {
-    display: inline-block;
+    display: block;
     background-color: rgb(33, 90, 128);
     width: 15%;
     height: 15%;
-		margin-left: 10px;
+		min-width: 300px;
+		max-height: 475px;
+		float: right;
+		border-radius: 1%;
+		border: silver solid 19px;
 }
 
 .copyright,
@@ -180,11 +176,29 @@ body {
     background-color: #1aa3ff;
 }
 
-.flappyfuture-img:hover,
-.mountainviews-img:hover,
-.dhmodestroy-img:hover{
-	opacity: 0.8;
+.dhmodestroy-img,
+.mountainviews-img,
+.flappyfuture-img{
+	min-width: 350px;
+	min-height: 350px;
+	max-width: 350px;
+	max-height: 350px;
 }
+.dhmodestroy-img:hover,
+.mountainviews-img:hover,
+.flappyfuture-img:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.link{
+	color: white;
+	text-decoration: underline;
+}
+.link:hover{
+	color: white;
+}
+
 
 .projectinfo{
 	text-align: left;
@@ -194,14 +208,20 @@ body {
 }
 .projecttitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 75px;
 		color: white;
 }
 
 .projectname{
 	font-family: 'Roboto', sans-serif;
-	font-size: 45px;
+	font-size: 35px;
 	color: white
+}
+
+.skillstitle{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 60px;
 }
 
 .experiencetitle{
@@ -209,14 +229,31 @@ body {
 	font-size: 50px;
 }
 
+.devicon {
+	margin: 0;
+	color: white;
+	font-size: 9rem;
+}
+.modal-header{
+	color: white;
+	background-color: #005cbf;
+	font-size: 45px;
+	font-family: 'Roboto', sans-serif;
+}
+.modal-body{
+	color: white;
+	background-color: #005cbf;
+	font-family: 'Roboto', sans-serif;
+	font-size: 23px;
+}
+.modal-footer{
+	color: white;
+	background-color: #005cbf;
+	font-family: 'Roboto', sans-serif;
+	font-size: 23px;
+}
 .body {
     font-family: 'Roboto', sans-serif;
-}
-
-.slideimage {
-    max-width: 400px;
-    max-height: 300px;
-    vertical-align: middle;
 }
 
 .head{

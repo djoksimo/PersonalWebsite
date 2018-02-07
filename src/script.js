@@ -5,7 +5,8 @@ if (sr.isSupported()) {
 
 function scrollToIntro(){
 	zenscroll.toY(9);
-	$("span").removeClass("blink");
+	$("i").removeClass("blink");
+	$("a").removeClass("blink");
 }
 function scrollToExperience() {
     var experience = document.getElementById("experience");
@@ -84,12 +85,28 @@ $(document).ready(function() {
     });
 });
 
+function copyValue(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
 
-function copyValue() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    document.execCommand('copy');
+
 }
+
+function changeTooltip1(){
+	$('.emailname').attr('data-original-title', "Copied!").tooltip('show');
+}
+
+function changeTooltip2() {
+	$('.phonename').attr('data-original-title', "Copied!").tooltip('show');
+}
+//glitch  with single and double-click
+// function copyValue() {
+//     var copyText = document.getElementById("myInput");
+//     copyText.select();
+//     document.execCommand('copy');
+// }
 
 //Loading Screen
 
