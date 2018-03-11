@@ -4,6 +4,10 @@
     height: 0;
 }
 
+.fa-github,
+.fa-linkedin{
+	font-size: 20pt;
+}
 .navbar{
 	font-family: 'Roboto', sans-serif;
 	height: 63px;
@@ -56,7 +60,7 @@
 		font-size: 26px;
 }
 .dropdown-menu{
-	margin-top: 4px;
+	margin-top: 5px;
 }
 
 .body {
@@ -68,6 +72,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+input{
+	display: none;
+}
 .mephoto {
     display: block;
     background-color: rgb(33, 90, 128);
@@ -261,7 +268,6 @@ body {
 	text-align: left;
 }
 
-/*loader */
 
 #loading-wrapper {
     position: fixed;
@@ -375,8 +381,6 @@ body {
     }
 }
 
-
-/*Page animation*/
 
 .animate-bottom {
     position: relative;
