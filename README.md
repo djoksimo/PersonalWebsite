@@ -1,9 +1,6 @@
 # Personal website 
 Created using HTML, CSS, JS, jQuery, and Bootstrap4 
-## Purpose of Website 
-- So that potential employers can get to know me better
-- Learning JavaScript frameworks
-- Website styling practice
+
+__Website re-created in Angular with material design and SCSS will be released on July 30th, 2018__
 
 ## Domain: www.danilojoksimovic.com 
-### Still a WIP
