@@ -1,0 +1,27 @@
+#github-icon, #linkedin-icon {
+  font-size: 2em;
+}
+
+#github-icon:hover,
+#linkedin-icon:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#custom-nav, .navbar, .navbar-brand, links {
+  width: 100%;
+  color: white;
+}
+
+.navbar-nav li:hover {
+  cursor: pointer;
+}
+
+#resume-button{
+  display: block;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 9em;
+  height: 3em;
+}

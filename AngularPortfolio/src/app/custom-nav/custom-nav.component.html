@@ -1,0 +1,59 @@
+<mdb-navbar id="custom-nav" SideClass="navbar navbar-expand-lg fixed-top default-color scrolling-navbar">
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href="#">Danilo Joksimovic</a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item nav-link active waves-light" routerLink="/" mdbWavesEffect>Home</li>
+      <li class="nav-item nav-link waves-light" routerLink="/" mdbWavesEffect>Experience</li>
+      <li class="nav-item nav-link waves-light" routerLink="/" mdbWavesEffect>Projects</li>
+      <li class="nav-item nav-link waves-light" routerLink="/" mdbWavesEffect>About</li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item nav-link active waves-light"  routerLink="/" >
+        <button id="resume-button" routerLink="/resume" class="btn small btn-white relative waves-light" mdbWavesEffect>Resume
+          <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </button>
+
+      </li>
+      <li class="nav-item nav-link active waves-light"  routerLink="/" >
+        <i class="fa fa-github" id="github-icon" aria-hidden="true" mdbWavesEffect></i>
+      </li>
+      <li class="nav-item nav-link active waves-light"  routerLink="/" >
+        <i class="fa fa-linkedin" id="linkedin-icon" aria-hidden="true" mdbWavesEffect></i>
+      </li>
+
+    </ul>
+  </links>
+</mdb-navbar>
+
+<!--<div mdbModal #resumeModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" id="modal-resume" aria-labelledby="myBasicModalLabel"-->
+     <!--aria-hidden="true">-->
+  <!--<div class="modal-dialog modal-fluid modal-full-height" role="document">-->
+    <!--<div class="modal-content">-->
+      <!--<div class="modal-header">-->
+        <!--<button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">-->
+          <!--<span aria-hidden="true">×</span>-->
+        <!--</button>-->
+        <!--<h4 class="modal-title w-100" id="myModalLabel">Danilo's Resume</h4>-->
+      <!--</div>-->
+      <!--<div class="modal-body">-->
+        <!--<div>-->
+          <!--<label>PDF src</label>-->
+          <!--<input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">-->
+        <!--</div>-->
+        <!--<pdf-viewer [src]="pdfSrc"-->
+                    <!--[render-text]="true"-->
+                    <!--style="display: block;"-->
+        <!--&gt;</pdf-viewer>-->
+      <!--</div>-->
+      <!--<div class="modal-footer">-->
+        <!--<button type="button" class="btn btn-secondary waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>-->
+        <!--<button type="button" class="btn btn-primary relative waves-light" mdbWavesEffect>Save changes</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+
+

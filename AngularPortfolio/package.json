@@ -20,7 +20,13 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@types/chart.js": "^2.7.28",
+    "angular-bootstrap-md": "^6.2.0",
+    "chart.js": "^2.5.0",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
+    "ng2-pdf-viewer": "^5.1.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
