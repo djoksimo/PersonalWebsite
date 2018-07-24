@@ -1,10 +1,8 @@
 <div>
-<label>PDF src</label>
-  <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
-  </div>
-  <pdf-viewer
-    [src]="pdfSrc"
-    [render-text]="true"
-    style="display: block;"
-  ></pdf-viewer>
+    <input style="opacity: 0" [(ngModel)]="pdfSrc">
 </div>
+<pdf-viewer
+  [src]="pdfSrc"
+  [render-text]="true"
+  style="display: block;"
+></pdf-viewer>
