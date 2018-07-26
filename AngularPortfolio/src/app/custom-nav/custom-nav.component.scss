@@ -1,3 +1,12 @@
+links{
+  padding-right: 4em;
+  font-size: 1.3em;
+}
+
+.navbar-brand{
+  padding-left: 4em;
+}
+
 #github-icon, #linkedin-icon {
   font-size: 2em;
 }
@@ -10,29 +19,9 @@
 
 #custom-nav, .navbar, .navbar-brand, links {
   width: 100%;
-  color: white;
+  color: #ffffff;
 }
 
 .navbar-nav li:hover {
   cursor: pointer;
-}
-
-#resume-button{
-  display: block;
-  padding: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 9em;
-  height: 3em;
-}
-
-#contact-dropdown {
-  display: block;
-  padding-top: 0.13em;
-}
-
-#contact-button {
-  //padding: 0;
-  width: 12em;
-  height: 3em;
 }
