@@ -14,7 +14,6 @@
   }
 }
 
-
 body {
   width: 100%;
   height: 100%;
@@ -95,22 +94,20 @@ hr {
 }
 
 #me-photo{
-  display: block;
-  width: 360px;
+  width: 350px;
   height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .card {
-  //display: block;
   height: 546px;
   width: 360px;
 }
 
 .card-body{
   background: #005662;
-  //color: #ffffff;
+  color: #ffffff;
 }
 
 .card-body p {
@@ -118,17 +115,24 @@ hr {
 }
 
 #tgj-photo{
-  display: block;
   transform: scale(0.9);
   margin-left: auto;
+  width: 350px;
   margin-right: auto;
 }
 
 .tgj-card{
   margin-top: 10em;
-  height: 360px;
+  height: 500px;
+  width: 350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.me-card{
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
 }
 
 @media (max-width: 767px) {
@@ -152,4 +156,16 @@ hr {
   .tgj-card{
     margin-top: 1em;
   }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2em;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #005662, #4fb3bf, #f05545, #b71c1c);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
