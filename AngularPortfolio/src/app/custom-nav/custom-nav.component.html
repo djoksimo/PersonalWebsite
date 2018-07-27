@@ -17,19 +17,12 @@
           </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-
+          <li class="nav-item waves-light" routerLink="#">
             <a class="nav-link">
             <div class="dropdown" id="contact-dropdown" mdbDropdown>
-
-              <!--Trigger-->
-
-              <button mdbDropdownToggle id="contact-button" class="btn btn-white dropdown-toggle waves-light" type="button" mdbWavesEffect>
+              <button mdbDropdownToggle id="contact-button" class="btn btn-white waves-light" type="button" mdbWavesEffect>
                 Contact
               </button>
-
-
-              <!--Menu-->
               <div id="contact-dropdown" class="dropdown-menu">
                 <a class="dropdown-item" href="mailto:djoksimo@uwaterloo.ca" mdbTooltip="djoksimo@uwaterloo.ca!" placement="right" mdbWavesEffect>Email</a>
                 <a class="dropdown-item" (click)="copyMessage('+14168040390')" value="click to copy" mdbTooltip="+14168040390" placement="right" mdbWavesEffect>Phone</a>
@@ -37,11 +30,9 @@
             </div>
             </a>
           </li>
-          <li class="nav-item waves-light"  routerLink="/resume" >
-            <a class="nav-link">
-              <button id="resume-button" routerLink="/resume" class="btn small btn-white" mdbWavesEffect>Resume
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-              </button>
+          <li class="nav-item waves-light">
+            <a class="nav-link" href="../../assets/Danilo_Joksimovic_Resume.pdf" target="_blank">
+              <button id="resume-button"  class="btn small btn-white" mdbWavesEffect>Resume</button>
             </a>
           </li>
           <li class="nav-item nav-link waves-light"  >
