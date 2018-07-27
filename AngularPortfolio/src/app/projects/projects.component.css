@@ -2,6 +2,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding-top: 7em;
+  padding-bottom: 3em;
   color: #ffffff;
   background: linear-gradient(-45deg, #005662, #4fb3bf, #f05545, #b71c1c);
   background-size: 400% 400%;
@@ -84,3 +85,7 @@ hr{
   color: #ffffff;
 }
 
+.card {
+  height: 576px;
+  width: 350px;
+}

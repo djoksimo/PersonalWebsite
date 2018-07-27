@@ -28,7 +28,9 @@
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/parallax-js/dist/parallax.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -80,7 +82,9 @@
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/parallax-js/dist/parallax.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
