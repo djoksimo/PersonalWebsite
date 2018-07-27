@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
+declare var Parallax: any;
+import * as Parallax from 'parallax-js';
 
 @Component({
   selector: 'app-experience',
@@ -12,4 +14,11 @@ export class ExperienceComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterContentInit(){
+    const scene = document.getElementById('scene');
+    const parallaxInstance = new Parallax(scene, {
+      relativeInput: true,
+      hoverOnly: true
+    });
+  }
 }

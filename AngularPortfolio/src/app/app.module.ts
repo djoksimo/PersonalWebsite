@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RouterModule} from '@angular/router';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { CustomNavComponent } from './custom-nav/custom-nav.component';
@@ -24,6 +25,7 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
+    PdfViewerModule,
     FormsModule,
     AppRoutingModule
 
