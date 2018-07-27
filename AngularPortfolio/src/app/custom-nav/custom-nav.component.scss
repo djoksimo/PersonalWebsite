@@ -1,6 +1,8 @@
+#custom-nav{
+  height: 1em;
+}
 links{
-  padding-right: 4em;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .navbar-brand{
@@ -24,4 +26,21 @@ links{
 
 .navbar-nav li:hover {
   cursor: pointer;
+}
+
+button.navbar-toggler{
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .fixed-top {
+    position: relative;
+    top: auto;
+  }
+  .navbar {
+    max-height: none;
+  }
+  body {
+    margin: 0;
+  }
 }

@@ -1,0 +1,86 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 7em;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #005662, #4fb3bf, #f05545, #b71c1c);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+#projects-grid{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+hr{
+  background: #ffffff;
+}
+
+#mountain-img{
+  transform: scale(1.2);
+}
+
+#srvice-img{
+  padding-top: 98.65px;
+  padding-bottom: 98.65px;
+}
+
+#dhmo-img{
+  padding-top: 43.76px;
+  padding-bottom: 43.76px;
+  transform: scale(1.4);
+}
+
+#fitbit-img{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transform: scale(0.8);
+}
+
+.card-body{
+  background: #00838f;
+  color: #ffffff;
+}
+
