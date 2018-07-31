@@ -16,6 +16,7 @@ Created from scratch using Angular 6, HTML, SCSS, Typescript, MDBootstrap.
 * Implement contact form using Node.js
 * Update experience component
 * Perfect mobile-version layout
+* Redirect www.danilojoksimovic.com to danilojoksimovic.com through nginx
 
 
 # Domain: danilojoksimovic.com 
