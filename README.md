@@ -19,4 +19,4 @@ Created from scratch using Angular 6, HTML, SCSS, Typescript, MDBootstrap.
 * Redirect www.danilojoksimovic.com to danilojoksimovic.com through nginx
 
 
-# Domain: danilojoksimovic.com 
+# Domain: [danilojoksimovic.com](https://danilojoksimovic.com)
