@@ -14,9 +14,10 @@ Created from scratch using Angular 6, HTML, SCSS, Typescript, MDBootstrap.
 ## TODO:
 
 * Implement contact form using Node.js
-* Update experience component
-* Perfect mobile-version layout
+* Add more elements to experience component
+* Perfect mobile-version layout for about page
 * Redirect www.danilojoksimovic.com to danilojoksimovic.com through nginx
+* Provision same layout for IE and MS EDGE browsers
 
 
 # Domain: [danilojoksimovic.com](https://danilojoksimovic.com)
