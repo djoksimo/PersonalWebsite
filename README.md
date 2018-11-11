@@ -1,4 +1,4 @@
-# Personal Website
+# [Personal Website](https://danilojoskimovic.com)
 Created from scratch using Angular 6, HTML, SCSS, Typescript, MDBootstrap.
 
 * Hosted on Digital Ocean Ubuntu 18.04 instance
@@ -20,4 +20,4 @@ Created from scratch using Angular 6, HTML, SCSS, Typescript, MDBootstrap.
 * Provision same layout for IE and MS EDGE browsers
 
 
-# Domain: [danilojoksimovic.com](https://danilojoksimovic.com)
+### Domain: [danilojoksimovic.com](https://danilojoksimovic.com)
