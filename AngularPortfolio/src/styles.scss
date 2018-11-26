@@ -7,35 +7,48 @@
   src: url(assets/Comfortaa-Regular.ttf);
 }
 
-
-html, body{
-  font-family: "Comfortaa";
-}
-
-.primary {
-  background: #00838f;
-}
-
-.primary-light {
-  background: #4fb3bf;
-}
-
-.primary-dark {
-  background: #005662;
-}
-
-.secondary {
-  background: #b71c1c;
-}
-
-.secondary-light {
-  background: #f05545;
-}
-
-.secondary-dark {
-  background: #7f0000;
-}
-
-.primary-text {
+html, body {
   color: #ffffff;
+  background: linear-gradient(-45deg, #3f50b5, #757ce8, #ff7043, #002884);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  font-family: "Comfortaa", "sans-serif";
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
