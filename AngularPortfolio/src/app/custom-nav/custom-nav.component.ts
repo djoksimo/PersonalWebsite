@@ -8,6 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class CustomNavComponent implements OnInit {
 
 
+  emailClicked: boolean;
+  phoneClicked: boolean;
+
+  constructor() { }
+
+  ngOnInit() {
+    this.emailClicked = false;
+    this.phoneClicked = false;
+  }
+
   copyMessage(val: string){
     let selBox = document.createElement('textarea');
     selBox.style.position = 'fixed';
@@ -22,10 +32,5 @@ export class CustomNavComponent implements OnInit {
     document.body.removeChild(selBox);
   }
 
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

@@ -51,17 +51,35 @@
               <div id="contact-dropdown" class="dropdown-menu">
                 <a
                   class="dropdown-item"
+                  *ngIf="!emailClicked"
+                  (click)="emailClicked = true"
                   href="mailto:djoksimo@uwaterloo.ca"
-                  mdbTooltip="djoksimo@uwaterloo.ca!"
+                  mdbTooltip="Click to copy!"
                   placement="right"
                   mdbWavesEffect>Email</a>
                 <a
                   class="dropdown-item"
-                  (click)="copyMessage('+14168040390')"
+                  *ngIf="emailClicked"
+                  href="mailto:djoksimo@uwaterloo.ca"
+                  mdbTooltip="Email added to clipboard"
+                  placement="right"
+                  mdbWavesEffect>Email added to clipboard</a>
+
+                <a
+                  *ngIf="!phoneClicked"
+                  class="dropdown-item"
+                  (click)="copyMessage('+14168040390'); phoneClicked = true"
                   value="click to copy"
-                  mdbTooltip="+14168040390"
+                  mdbTooltip="Click to copy!"
                   placement="right"
                   mdbWavesEffect>Phone</a>
+                <a
+                  *ngIf="phoneClicked"
+                  class="dropdown-item"
+                  value="click to copy"
+                  mdbTooltip="Phone added to clipboard"
+                  placement="right"
+                  mdbWavesEffect>Phone added to clipboard</a>
               </div>
             </div>
             </a>

@@ -1,17 +1,3 @@
-@media (max-width: 767px) {
-  .fixed-top {
-    position: relative;
-    top: auto;
-  }
-  body {
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
-    margin: 0;
-  }
-}
-
-
 body {
   width: 100%;
   height: 100%;
@@ -22,7 +8,7 @@ body {
 
 #main {
   min-height: 100vh;
-  padding-top: 10em;
+  padding-top: 7em;
 }
 
 #title{
@@ -36,4 +22,21 @@ body {
 
 hr {
   background: #ffffff;
+}
+
+
+@media (max-width: 992px) {
+  .fixed-top {
+    position: relative;
+    /*top: auto;*/
+  }
+  body {
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+  #main {
+    padding-top: 3em;
+  }
 }
