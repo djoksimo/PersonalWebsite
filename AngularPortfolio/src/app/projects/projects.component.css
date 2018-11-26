@@ -13,6 +13,12 @@ body {
   align-items: center;
 }
 
+.img-fluid {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
 hr{
   background: #ffffff;
 }
@@ -22,8 +28,9 @@ hr{
 }
 
 #srvice-img{
-  padding-top: 98.65px;
-  padding-bottom: 98.65px;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
 }
 
 #dhmo-img{
@@ -39,7 +46,7 @@ hr{
 }
 
 .card-body{
-  background: #00838f;
+  background: #002884;
   color: #ffffff;
 }
 

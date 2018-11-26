@@ -65,7 +65,7 @@ hr {
 }
 
 .card-body{
-  background: #005662;
+  background: #002884;
   color: #ffffff;
 }
 
@@ -99,7 +99,8 @@ hr {
 }
 
 #marathon-img{
-  transform: scale(1.2);
+  object-fit: contain;
+  //transform: scale(1.2);
 }
 .marathon-card{
   height: 360px;
@@ -142,9 +143,4 @@ body {
   height: 100%;
   padding-bottom: 2em;
   color: #ffffff;
-  background: linear-gradient(-45deg, #005662, #4fb3bf, #f05545, #b71c1c);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
 }
