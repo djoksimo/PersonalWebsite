@@ -1,19 +1,38 @@
 <nav>
   <div class="container">
-    <mdb-navbar id="custom-nav" SideClass="navbar fixed-top navbar-expand-lg navbar-dark indigo ie-nav" [containerInside]="true">
+    <mdb-navbar
+      id="custom-nav"
+      SideClass="navbar fixed-top navbar-expand-lg navbar-dark indigo ie-nav"
+      [containerInside]="true">
       <mdb-navbar-brand><a class="navbar-brand animated bounceIn" href="/">Danilo</a></mdb-navbar-brand>
       <links>
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active waves-light" routerLink="/" mdbWavesEffect>
+          <li
+            class="nav-item waves-light"
+            routerLinkActive="active"
+            routerLink="/home"
+            mdbWavesEffect>
             <a class="nav-link">Home</a>
           </li>
-          <li class="nav-item waves-light" routerLink="/experience" mdbWavesEffect>
+          <li
+            class="nav-item waves-light"
+            routerLinkActive="active"
+            routerLink="/experience"
+            mdbWavesEffect>
             <a class="nav-link">Experience</a>
           </li>
-          <li class="nav-item waves-light" routerLink="/projects" mdbWavesEffect>
+          <li
+            class="nav-item waves-light"
+            routerLinkActive="active"
+            routerLink="/projects"
+            mdbWavesEffect>
             <a class="nav-link">Projects</a>
           </li>
-          <li class="nav-item waves-light" routerLink="/about" mdbWavesEffect>
+          <li
+            class="nav-item waves-light"
+            routerLinkActive="active"
+            routerLink="/about"
+            mdbWavesEffect>
             <a class="nav-link">About</a>
           </li>
         </ul>
@@ -21,19 +40,38 @@
           <li class="nav-item waves-light" routerLink="#">
             <a class="nav-link">
             <div class="dropdown" id="contact-dropdown" mdbDropdown>
-              <button mdbDropdownToggle id="contact-button" class="btn btn-white waves-light" type="button" mdbWavesEffect>
+              <button
+                mdbDropdownToggle
+                id="contact-button"
+                class="btn btn-white waves-light"
+                type="button"
+                mdbWavesEffect>
                 Contact
               </button>
               <div id="contact-dropdown" class="dropdown-menu">
-                <a class="dropdown-item" href="mailto:djoksimo@uwaterloo.ca" mdbTooltip="djoksimo@uwaterloo.ca!" placement="right" mdbWavesEffect>Email</a>
-                <a class="dropdown-item" (click)="copyMessage('+14168040390')" value="click to copy" mdbTooltip="+14168040390" placement="right" mdbWavesEffect>Phone</a>
+                <a
+                  class="dropdown-item"
+                  href="mailto:djoksimo@uwaterloo.ca"
+                  mdbTooltip="djoksimo@uwaterloo.ca!"
+                  placement="right"
+                  mdbWavesEffect>Email</a>
+                <a
+                  class="dropdown-item"
+                  (click)="copyMessage('+14168040390')"
+                  value="click to copy"
+                  mdbTooltip="+14168040390"
+                  placement="right"
+                  mdbWavesEffect>Phone</a>
               </div>
             </div>
             </a>
           </li>
           <li class="nav-item waves-light">
             <a class="nav-link" href="../../assets/Danilo_Joksimovic_Resume.pdf" target="_blank">
-              <button id="resume-button"  class="btn small btn-white" mdbWavesEffect>Resume</button>
+              <button
+                id="resume-button"
+                class="btn small btn-white"
+                mdbWavesEffect>Resume</button>
             </a>
           </li>
           <li class="nav-item nav-link waves-light"  >
