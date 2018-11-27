@@ -19,6 +19,12 @@ body {
   object-fit: cover;
 }
 
+#sound-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
 hr{
   background: #ffffff;
 }
