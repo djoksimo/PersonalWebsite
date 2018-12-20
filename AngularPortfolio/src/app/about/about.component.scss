@@ -1,24 +1,13 @@
-
-@media (max-width: 767px) {
-  .fixed-top {
-    position: relative;
-    top: auto;
-  }
-  body {
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
-    right: 0;
-    left: 0;
-    margin: 0;
-  }
-}
-
 body {
   width: 100%;
   height: 100%;
   padding-bottom: 2em;
   color: #ffffff;
+}
+
+video {
+  padding-top: 7em;
+  width: 52em;
 }
 
 #main {
@@ -143,4 +132,24 @@ body {
   height: 100%;
   padding-bottom: 2em;
   color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .fixed-top {
+    position: relative;
+    top: auto;
+  }
+  body {
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  video {
+    width: 95%;
+    padding-bottom: 4em;
+  }
 }
