@@ -1,5 +1,6 @@
 <custom-nav></custom-nav>
 <body>
+  <!--TODO: Add ng-for and separate cards to universal card component-->
   <div id="projects-grid">
     <div class="container">
       <div class="row animated slideInDown">
@@ -8,11 +9,11 @@
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
               <img
-                src="../../assets/srvice-logo.png"
-                href="https://srvice.ca"
+                src="../../assets/ratemycourses.jpg"
+                href="https://play.google.com/store/apps/details?id=com.ratemycourses.app"
                 class="img-fluid"
                 id="srvice-img"
-                 alt="Srvice">
+                 alt="Rate My Courses">
               <a>
                 <div class="mask"></div>
               </a>
@@ -20,15 +21,19 @@
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Srvice</h4>
+              <h4 class="card-title">Rate My Courses</h4>
               <!--Text-->
-              <p>Multi-platform app for finding and scheduling appointments
-                with skilled-workers in your area. WIP</p>
+              <p>Multi-platform app which improves course selection for university students</p>
               <a
                 class="btn btn-primary waves-light"
-                href="https://srvice.ca"
+                href="https://play.google.com/store/apps/details?id=com.ratemycourses.app"
                 target="_blank"
-                mdbWavesEffect>Srvice Website</a>
+                mdbWavesEffect>Download</a>
+              <a
+                class="btn btn-primary waves-light"
+                href="https://ratemycourses.org"
+                target="_blank"
+                mdbWavesEffect>Website</a>
             </div>
           </div>
         </div>
@@ -37,7 +42,7 @@
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
               <img
-                src="../../assets/wathaus.jpg"
+                src="../../assets/wathaus.png"
                 class="img-fluid"
                 href="https://github.com/djoksimo/WatHaus.AI"
                 target="_blank"
@@ -66,7 +71,7 @@
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
               <img
-                src="../../assets/once_upon.jpg"
+                src="../../assets/onceupon.png"
                 class="img-fluid"
                 href="https://github.com/djoksimo/OnceUponATime"
                 target="_blank"
@@ -80,7 +85,7 @@
               <!--Title-->
               <h4 class="card-title">Once Upon a Time</h4>
               <!--Text-->
-              <p>Developed an Android app with C# and Unity3D which dynamically spawns, destroys, translates and rotates 3D
+              <p>Android app which dynamically spawns, destroys, translates and rotates 3D
                 models according to a story being spoken into a microphone</p>
               <a
                 class="btn btn-primary waves-light"
@@ -125,7 +130,7 @@
           <div class="card">
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
-              <img src="../../assets/deltahacks.png" class="img-fluid" id="delta-img" alt="Flappy Future">
+              <img src="../../assets/flappyfuture.png" class="img-fluid" id="delta-img" alt="Flappy Future">
               <a>
                 <div class="mask"></div>
               </a>
@@ -135,7 +140,7 @@
               <!--Title-->
               <h4 class="card-title">Flappy Future</h4>
               <!--Text-->
-              <p>VR Android App made for the Google Cardboard with Leap Motion</p>
+              <p>Educational VR Android video game developed for Google Cardboard with Leap Motion compatibility</p>
               <a
                 class="btn btn-primary waves-light"
                 href="https://github.com/djoksimo/FlappyFuture"
@@ -147,7 +152,7 @@
           <div class="card">
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
-              <img src="../../assets/fitbit.png" class="img-fluid" id="fitbit-img" alt="Fitbit Project">
+              <img src="../../assets/cheatday.png" class="img-fluid" id="fitbit-img" alt="Fitbit Project">
               <a>
                 <div class="mask"></div>
               </a>
@@ -157,7 +162,7 @@
               <!--Title-->
               <h4 class="card-title">Cheat Day</h4>
               <!--Text-->
-              <p>Fitness app made with the Fitbit SDK. WIP</p>
+              <p>Currently working on Fitbit and Android app that analyzes collected data with AI</p>
               <a
                 class="btn btn-primary waves-light"
                 mdbWavesEffect
@@ -182,7 +187,7 @@
               <!--Title-->
               <h4 class="card-title">DHMO Destroyer</h4>
               <!--Text-->
-              <p>Arduino remote controlled boat via Android app</p>
+              <p>Android app controlled DC motor boat developed with the Arduino platform</p>
               <a
                 class="btn btn-primary waves-light"
                 href="https://github.com/djoksimo/DHMODestroyer"
@@ -216,7 +221,7 @@
           <div class="card">
             <!--Card image-->
             <div class="view hoverable hm-white-slight waves-light" mdbWavesEffect>
-              <img src="../../assets/lights.jpg" class="img-fluid" id="sound-img" alt="RavePi">
+              <img src="../../assets/ravepi.png" class="img-fluid" id="sound-img" alt="RavePi">
               <a>
                 <div class="mask"></div>
               </a>
@@ -224,7 +229,7 @@
             <!--Card content-->
             <div class="card-body">
               <!--Title-->
-              <h4 class="card-title">Sound of Music</h4>
+              <h4 class="card-title">RavePi</h4>
               <!--Text-->
               <p>Raspberry Pi controller that changes the colours in an LED strip according to the beat of any song</p>
               <a
@@ -239,4 +244,5 @@
       </div>
     </div>
   </div>
+  <custom-particles></custom-particles>
 </body>

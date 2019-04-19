@@ -8,6 +8,8 @@ body {
 }
 
 #projects-grid{
+  position: relative;
+  z-index: 10 !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
